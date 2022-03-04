@@ -1,0 +1,200 @@
+body {
+	margin: 0px;
+}
+
+.navigation-bar {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	max-width: 1264px;
+}
+
+.navigation {
+	background-color: #6F263D;
+	box-shadow: 0px 0px 4px;	
+	position: sticky;
+	z-index: 1;
+	top: 0;
+}
+
+.navigation-button {
+	float: left;
+}
+
+.team-logo-button {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px 20px;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.logo-button-click {
+	padding: 2px;
+}
+
+li a:hover:not(.active) {
+	background-color: #236192;
+}
+
+tr:hover:not(.active) {
+	background-color: rgba(111, 38, 61, 0.5);
+}
+
+.action-photo {
+	max-width: 1264px;
+	margin: 0 auto;
+}
+
+.action-photo-image {
+	display: block;
+	width: 100%;
+}
+
+.Headshot {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px;
+	margin-top: -100px;
+	position: relative;
+}
+
+section.attributes {
+	text-align: center;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+span.attributes {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.name-number {
+	font-size: 32px;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+.page {
+	background-color: #236192;
+}
+
+.contents {
+	max-width: 1264px;
+	margin: auto;
+	background-color: #FFFFFF;
+}
+
+.profile {
+	padding-bottom: 20px;
+}
+
+.stat-section {
+	background-color: #DDDDDD;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.personal-season {
+	background-color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 32px;
+	padding-bottom:32px;
+	box-sizing: border-box;
+	overflow: auto;
+	box-shadow: 0px 0px 5px grey;
+}
+
+.player-bio {
+	background-color: white;
+	float: left;
+	width: 33.33333333%
+}
+
+.player-bio-list {
+	margin: 0;
+	font-family: Arial;
+	font-size: 16;
+	list-style: none;
+	line-height: 1.75;
+}
+
+.season-stats {
+	width: 66.66666%;
+	float: left;
+}
+
+.current-season-stats {
+	width: 100%;
+	border-right: 1px solid #ddd;
+}
+
+.top-table-header {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-weight: normal;
+	font-family: Arial;
+	background-color: #000000;
+	color: white;
+	border-collapse: collapse;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 13px;
+	padding-top: 13px;
+	font-family: Arial;
+	text-align: center;
+	font-size: 14px;
+	border-bottom: 1px solid #ddd;
+}
+
+.left-table-header {
+	text-align: left;
+	border-bottom: none;
+	background-color: #ddd;
+}
+
+.stats-heading {
+	font-family: 'Oswald', sans-serif;
+	font-size: 32px;
+	text-transform: none;
+	text-align: center;
+}
+
+.stats-section {
+	background-color: white;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+	overflow: auto;
+	box-shadow: 0px 0px 5px grey;
+}
+
+.full-tables {
+	width: 100%;
+}
