@@ -45,7 +45,7 @@ li a:hover:not(.active) {
 	background-color: #236192;
 }
 
-tr:hover:not(.active) {
+tr.stats-row:hover:not(.active) {
 	background-color: rgba(111, 38, 61, 0.5);
 }
 
@@ -177,6 +177,10 @@ td {
 	background-color: #ddd;
 }
 
+.name-hover:hover:not(.active) {
+	color: #236192;
+}
+
 .stats-heading {
 	font-family: 'Oswald', sans-serif;
 	font-size: 32px;
@@ -197,4 +201,19 @@ td {
 
 .full-tables {
 	width: 100%;
+}
+
+.roster-positions {
+	font-family: Montserrat;
+	font-size: 32px;
+	align: left;
+}
+
+.roster-names {
+	width: 100%;
+}
+
+.name-hover {
+	text-decoration: none;
+	color: black;
 }
