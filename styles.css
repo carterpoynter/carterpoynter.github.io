@@ -45,7 +45,7 @@ li a:hover:not(.active) {
 	background-color: #236192;
 }
 
-tr.stats-row:hover:not(.active) {
+tr:hover:not(.active) {
 	background-color: rgba(111, 38, 61, 0.5);
 }
 
@@ -139,14 +139,6 @@ span.attributes {
 	float: left;
 }
 
-.roster-section {
-	width: 100%;
-}
-
-.roster-list {
-	width: 100%;
-}
-
 .current-season-stats {
 	width: 100%;
 	border-right: 1px solid #ddd;
@@ -166,7 +158,6 @@ span.attributes {
 
 table {
 	border-collapse: collapse;
-	width: 100%;
 }
 
 td {
@@ -186,27 +177,11 @@ td {
 	background-color: #ddd;
 }
 
-.roster-names a {
-	display: block;
-	text-decoration: none;
-	color: black;
-}
-
-.name-hover:hover {
-	color: #236192;
-}
-
 .stats-heading {
 	font-family: 'Oswald', sans-serif;
 	font-size: 32px;
 	text-transform: none;
 	text-align: center;
-}
-
-.roster-positions {
-	font-family: Montserrat;
-	font-size: 32px;
-	text align: left;
 }
 
 .stats-section {
@@ -220,6 +195,6 @@ td {
 	box-shadow: 0px 0px 5px grey;
 }
 
-.roster-names {
+.full-tables {
 	width: 100%;
 }
