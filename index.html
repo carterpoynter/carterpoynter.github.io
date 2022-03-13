@@ -4,19 +4,21 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="navigation">
-		<ul class="navigation-bar">
-			<li class="team-logo-button"><a href="roster.html" class="logo-button-click">
-				<img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="width:50px;height:50px;">
-			</a></li>
-			<li class="navigation-button"><a href="roster.html">Team</a></li>
-			<li class="navigation-button"><a href="default.asp">Schedule</a></li>
-			<li class="navigation-button"><a href="default.asp">Photo Gallery</a></li>
-		</ul>
+	<div class="topnavfull">
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" style="padding:5px;"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="height:33px;"></a>
+			<a href="index.html">Roster</a>
+			<a href="#contact">Schedule</a>
+			<a href="#about">Photo Gallery</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
 	</div>
 <div class="page">
 <section class="contents">
@@ -24,6 +26,7 @@
 	<section class="sub-container">
 		<h1 class="stats-heading">ROSTER</h1>
 		<h1 class="roster-positions">Forwards</h1>
+		<div style="overflow: auto;">
 		<table class="roster-names">
 				<tr>
 					<th class="top-table-header">Player</th>
@@ -37,7 +40,7 @@
 				<tr>
 					<td class="left-table-header"><a href="stats_chase.html" class="name-hover">Chase Noble</a></td>
 					<td>27</td>
-					<td>RW/D</td>
+					<td>RW</td>
 					<td>L</td>
 					<td>5' 7"</td>
 					<td>Apr 27, 2000</td>
@@ -53,7 +56,9 @@
 					<td>Bellingham, WA, USA</td>
 				</tr>
 		</table>
+		</div>
 		<h1 class="roster-positions">Defense</h1>
+		<div style="overflow: auto;">
 		<table class="roster-names">
 				<tr>
 					<th class="top-table-header">Player</th>
@@ -74,10 +79,23 @@
 					<td>Bellingham, WA, USA</td>
 				</tr>
 		</table>
+		</div>
 		<h1 class="roster-positions">Goalies</h1>
 	</section>
 	</section>
 </section>
 </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
 </html>

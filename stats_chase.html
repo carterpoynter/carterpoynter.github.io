@@ -4,18 +4,21 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="navigation">
-		<ul class="navigation-bar">
-			<li class="team-logo-button"><a href="index.html" class="logo-button-click">
-				<img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="width:50px;height:50px;">
-			</a></li>
-			<li class="navigation-button"><a href="index.html">Team</a></li>
-			<li class="navigation-button"><a href="default.asp">Schedule</a></li>
-			<li class="navigation-button"><a href="default.asp">Photo Gallery</a></li>
-		</ul>
+	<div class="topnavfull">
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" style="padding:5px;"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="height:33px;"></a>
+			<a href="index.html">Roster</a>
+			<a href="#contact">Schedule</a>
+			<a href="#about">Photo Gallery</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
 	</div>
 <div class="page">
 <section class="contents">
@@ -52,18 +55,14 @@
 			<table class="current-season-stats">
 				<tr class="stats-row">
 					<th class="top-table-header" style="background-color:#6F263D;"><b>Season</b></th>
-					<th class="top-table-header">Age</th>
-					<th class="top-table-header">Team</th>
 					<th class="top-table-header">GP</th>
-					<th class="top-table-header">Goals</th>
-					<th class="top-table-header">Assists</th>
-					<th class="top-table-header">Points</th>
+					<th class="top-table-header">G</th>
+					<th class="top-table-header">A</th>
+					<th class="top-table-header">P</th>
 					<th class="top-table-header">PIM</th>
 				</tr>
 				<tr class="stats-row">
 					<td class="left-table-header">2021-22</td>
-					<td>21</td>
-					<td>Avalanche</td>
 					<td>16</td>
 					<td>10</td>
 					<td>17</td>
@@ -72,8 +71,6 @@
 				</tr>
 				<tr class="stats-row">
 					<td class="left-table-header">Career</td>
-					<td><b>-</b></td>
-					<td><b>-</b></td>
 					<td><b>30</b></td>
 					<td><b>15</b></td>
 					<td><b>27</b></td>
@@ -85,6 +82,7 @@
 	</section>
 	<section class="sub-container">
 		<h1 class="stats-heading">Stats</h1>
+		<div style="overflow: auto;">
 		<table class="full-tables">
 				<tr class="stats-row">
 					<th class="top-table-header" style="background-color:#6F263D"><b>Season</b></th>
@@ -127,9 +125,11 @@
 					<td><b>27</b></td>
 				</tr>
 			</table>
+			</div>
 	</section>
 	<section class="sub-container">
 		<h1 class="stats-heading">Playoffs Stats</h1>
+		<div style="overflow: auto;">
 		<table class="full-tables">
 				<tr class="stats-row">
 					<th class="top-table-header" style="background-color:#6F263D"><b>Season</b></th>
@@ -162,6 +162,7 @@
 					<td><b>0</b></td>
 				</tr>
 			</table>
+			</div>
 	</section>
 	<section class="sub-container">
 		<h1 class="stats-heading">Awards</h1>
@@ -169,5 +170,17 @@
 	</section>
 </section>
 </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
 </html>
