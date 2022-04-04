@@ -2,7 +2,7 @@
 <html lang="en_US">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="../styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +11,10 @@
 <body>
 	<div class="topnavfull">
 		<div class="topnav" id="myTopnav">
-			<a href="index.html" style="padding:5px;"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="height:33px;"></a>
-			<a href="index.html">Roster</a>
+			<a href="../index.html" style="padding:5px;"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="height:33px;"></a>
+			<a href="../index.html">Roster</a>
 			<a href="#contact">Schedule</a>
-			<a href="gallery.html">Photo Gallery</a>
+			<a href="../gallery.html">Photo Gallery</a>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
 			</a>
@@ -23,17 +23,15 @@
 <div class="page">
 <section class="contents">
 		<figure  class="action-photo">
-			<img src="images/action_shots/banner-chase.jpg" alt="Player Photo" class="action-photo-image">
+			<img src="../images/action_shots/banner-carter.jpg" alt="Player Photo" class="action-photo-image">
 		</figure>
 	<section class="profile">
-			<img src="images/profiles/Profile_Empty.jpg" alt="Player Headshot" class="Headshot">
-			<h1 class="name-number">Chase Noble | #27</h1>
+			<img src="../images/profiles/Profile_Carter2.jpg" alt="Player Headshot" class="Headshot">
+			<h1 class="name-number">Carter Poynter | #96</h1>
 			<section class="attributes">
-				<span class="attributes">RW/D</span>
+				<span class="attributes">C</span>
 				<span class="attributes"> | </span>
-				<span class="attributes">5' 7"</span>
-				<span class="attributes"> | </span>
-				<span class="attributes">160 lbs</span>
+				<span class="attributes">5' 8"</span>
 				<span class="attributes"> | </span>
 				<span class="attributes">Age: 21</span>
 				<span class="attributes"> | </span>
@@ -45,39 +43,41 @@
 	<section class="personal-season">
 		<div class="player-bio">
 			<ul class="player-bio-list">
-  				<li class="player-bio-item"><b>Chase Noble</b></li>
- 				<li class="player-bio-item"><b>Born: </b>April 27, 2000</li>
+  				<li class="player-bio-item"><b>Carter Poynter</b></li>
+ 				<li class="player-bio-item"><b>Born: </b>March 15, 2000</li>
 				<li class="player-bio-item"><b>Birthplace: </b>Bellingham, WA, USA</li>
 				<li class="player-bio-item"><b>Shoots: </b>Left</li>
 			</ul>
 		</div>
 		<div class="season-stats">
+			<div style="overflow: auto;">
 			<table class="current-season-stats">
 				<tr class="stats-row">
 					<th class="top-table-header" style="background-color:#6F263D;"><b>Season</b></th>
-					<th class="top-table-header">GP</th>
-					<th class="top-table-header">G</th>
-					<th class="top-table-header">A</th>
-					<th class="top-table-header">P</th>
-					<th class="top-table-header">PIM</th>
+					<th class="top-table-header"><abbr title="Games Played">GP</abbr></th>
+					<th class="top-table-header"><abbr title="Goals">G</abbr></th>
+					<th class="top-table-header"><abbr title="Assists">A</abbr></th>
+					<th class="top-table-header"><abbr title="Points">P</abbr></th>
+					<th class="top-table-header"><abbr title="Penalties In Minutes">PIM</abbr></th>
 				</tr>
 				<tr class="stats-row">
 					<td class="left-table-header">2021-22</td>
-					<td>18</td>
-					<td>13</td>
-					<td>17</td>
-					<td>30</td>
-					<td>15</td>
+					<td>20</td>
+					<td>20</td>
+					<td>23</td>
+					<td>43</td>
+					<td>3</td>
 				</tr>
 				<tr class="stats-row">
 					<td class="left-table-header">Career</td>
-					<td><b>32</b></td>
-					<td><b>18</b></td>
-					<td><b>27</b></td>
-					<td><b>45</b></td>
-					<td><b>27</b></td>
+					<td><b>73</b></td>
+					<td><b>60</b></td>
+					<td><b>62</b></td>
+					<td><b>122</b></td>
+					<td><b>21</b></td>
 				</tr>
 			</table>
+			</div>
 		</div>
 	</section>
 	<section class="sub-container">
@@ -88,11 +88,31 @@
 					<th class="top-table-header" style="background-color:#6F263D"><b>Season</b></th>
 					<th class="top-table-header">Age</th>
 					<th class="top-table-header">Team</th>
-					<th class="top-table-header">GP</th>
+					<th class="top-table-header"><abbr title="Games Played">GP</abbr></th>
 					<th class="top-table-header">Goals</th>
 					<th class="top-table-header">Assists</th>
 					<th class="top-table-header">Points</th>
-					<th class="top-table-header">PIM</th>
+					<th class="top-table-header"><abbr title="Penalties In Minutes">PIM</abbr></th>
+				</tr>
+				<tr class="stats-row">
+					<td class="left-table-header">2018-19</td>
+					<td>18</td>
+					<td>Avalanche</td>
+					<td>19</td>
+					<td>16</td>
+					<td>12</td>
+					<td>28</td>
+					<td>9</td>
+				</tr>
+				<tr class="stats-row">
+					<td class="left-table-header">2019-20</td>
+					<td>19</td>
+					<td>Avalanche</td>
+					<td>20</td>
+					<td>19</td>
+					<td>14</td>
+					<td>33</td>
+					<td>9</td>
 				</tr>
 				<tr class="stats-row">
 					<td class="left-table-header">2020-21</td>
@@ -100,72 +120,32 @@
 					<td>Avalanche</td>
 					<td>14</td>
 					<td>5</td>
-					<td>10</td>
-					<td>15</td>
-					<td>12</td>
+					<td>13</td>
+					<td>18</td>
+					<td>0</td>
 				</tr>
 				<tr class="stats-row">
 					<td class="left-table-header">2021-22</td>
 					<td>21</td>
 					<td>Avalanche</td>
-					<td>18</td>
-					<td>13</td>
-					<td>17</td>
-					<td>30</td>
-					<td>15</td>
-				</tr>
-				<tr class="stats-row">
-					<td class="left-table-header"><b>Career</b></td>
-					<td><b>-</b></td>
-					<td><b>-</b></td>
-					<td><b>32</b></td>
-					<td><b>18</b></td>
-					<td><b>27</b></td>
-					<td><b>45</b></td>
-					<td><b>27</b></td>
-				</tr>
-			</table>
-			</div>
-	</section>
-	<section class="sub-container">
-		<h1 class="stats-heading">Playoffs Stats</h1>
-		<div style="overflow: auto;">
-		<table class="full-tables">
-				<tr class="stats-row">
-					<th class="top-table-header" style="background-color:#6F263D"><b>Season</b></th>
-					<th class="top-table-header">Age</th>
-					<th class="top-table-header">Team</th>
-					<th class="top-table-header">GP</th>
-					<th class="top-table-header">Goals</th>
-					<th class="top-table-header">Assists</th>
-					<th class="top-table-header">Points</th>
-					<th class="top-table-header">PIM</th>
-				</tr>
-				<tr class="stats-row">
-					<td class="left-table-header">2020-21</td>
 					<td>20</td>
-					<td>Avalanche</td>
-					<td>2</td>
-					<td>1</td>
-					<td>6</td>
-					<td>7</td>
-					<td>0</td>
+					<td>20</td>
+					<td>23</td>
+					<td>43</td>
+					<td>3</td>
 				</tr>
 				<tr class="stats-row">
 					<td class="left-table-header"><b>Career</b></td>
 					<td><b>-</b></td>
 					<td><b>-</b></td>
-					<td><b>5</b></td>
-					<td><b>5</b></td>
-					<td><b>4</b></td>
-					<td><b>9</b></td>
-					<td><b>0</b></td>
+					<td><b>73</b></td>
+					<td><b>60</b></td>
+					<td><b>62</b></td>
+					<td><b>122</b></td>
+					<td><b>21</b></td>
 				</tr>
 			</table>
 			</div>
-	</section>
-	<section class="sub-container">
-		<h1 class="stats-heading">Awards</h1>
 	</section>
 	</section>
 </section>

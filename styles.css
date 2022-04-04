@@ -101,7 +101,7 @@ span.attributes {
 }
 
 .name-number {
-	font-size: 200%;
+	font-size: 32px;
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
 	font-weight: bold;
@@ -176,7 +176,7 @@ td {
 	padding-top: 13px;
 	font-family: Arial;
 	text-align: center;
-	font-size: 100%;
+	font-size: 16px;
 	border-bottom: 1px solid #ddd;
 	white-space: nowrap;
 }
@@ -193,7 +193,7 @@ td {
 
 .stats-heading {
 	font-family: 'Oswald', sans-serif;
-	font-size: 250%;
+	font-size: 40px;
 	text-transform: none;
 	text-align: center;
 }
@@ -225,7 +225,7 @@ td {
 
 .roster-positions {
 	font-family: Montserrat;
-	font-size: 250%;
+	font-size: 40px;
 	align: left;
 }
 
@@ -289,9 +289,14 @@ table {
 /* Create three equal columns that floats next to each other */
 .image-column {
   float: left;
-  width: 33%;
-  padding: 8px;
+  width: 50%;
+  padding: 4px;
   box-sizing: border-box;
+  line-height: 0;
+}
+
+.image-column img {
+	padding: 4px;
 }
 
 /* Clear floats after the columns */
@@ -306,7 +311,11 @@ table {
 	.image-column {
 		float: left;
 		width: 50%;
-		padding: 8px;
+		padding: 2px;
 		box-sizing: border-box;
+	}
+	
+	.image-column img {
+		padding: 2px;
 	}
 }
