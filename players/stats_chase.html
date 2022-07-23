@@ -3,17 +3,39 @@
 
 <head>
 	<link rel="stylesheet" href="../styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Sintony:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="../images/bellingham_avalanche_icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!-- Json Data location -->
+	<script type="text/javascript">
+		let obj.name = params.get("name");
+	
+		window.onload = function() {
+			document.getElementById("ma").innerHTML = obj.name + " | " + obj.age;
+		}
+	</script>
+
+<!-- Navigation bar JavaScript -->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
 </head>
 
 <body>
 	<div class="topnavfull">
 		<div class="topnav" id="myTopnav">
 			<a href="../index.html" style="padding:5px;"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="height:33px;"></a>
-			<a href="../index.html">Roster</a>
-			<a href="#contact">Schedule</a>
+			<a href="../rosters/roster2022-23.html">Roster</a>
 			<a href="../gallery.html">Photo Gallery</a>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
@@ -21,31 +43,39 @@
 		</div>
 	</div>
 <div class="page">
-<section class="contents">
-		<figure  class="action-photo">
-			<img src="../images/action_shots/banner-chase.jpg" alt="Player Photo" class="action-photo-image">
-		</figure>
-	<section class="profile">
-			<img src="../images/profiles/Profile_Chase2.jpg" alt="Player Headshot" class="Headshot">
-			<h1 class="name-number">Chase Noble | #27</h1>
-			<section class="attributes">
-				<span class="attributes">RW/D</span>
-				<span class="attributes"> | </span>
-				<span class="attributes">5' 7"</span>
-				<span class="attributes"> | </span>
-				<span class="attributes">Age: 21</span>
-				<span class="attributes"> | </span>
-				<span class="attributes"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="width:30px;height:30px;vertical-align:middle;background-position:center;"></span>
-				<span class="attributes">Bellingham Avalanche</span>
-			</section>
+<div class="full-player-photo-profile">
+	<div class="profile-name-container">
+		<img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="big-background-logo">
+	<section class="photo-name">
+		<div class="player-headshot">
+			<img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="profile-photo-team-logo">
+			<img src="../images/profiles/chase_profile.png" alt="Player Headshot" class="Headshot">
+		</div>
+		<div class="player-name">
+			<p class="player-name-team-number">Bellingham Avalanche | #27 | RW / D</p>
+			<p class="player-name-text">Chase</p>
+			<p class="player-name-text">Noble</p>
+		</div>
 	</section>
+	</div>
+	<section class="profile">
+		<section class="attributes">
+			<span class="attributes">RW / D</span>
+			<span class="attributes"> | </span>
+			<span class="attributes">#27</span>
+			<span class="attributes"> | </span>
+			<span class="attributes"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="width:40px;vertical-align:middle;background-position:center;"></span>
+			<span class="attributes">Bellingham Avalanche</span>
+		</section>
+	</section>
+</div>
+	<section class="contents">
 	<section class="main-container">
 	<section class="personal-season">
 		<div class="player-bio">
 			<ul class="player-bio-list">
   				<li class="player-bio-item"><b>Chase Noble</b></li>
- 				<li class="player-bio-item"><b>Born: </b>April 27, 2000</li>
-				<li class="player-bio-item"><b>Birthplace: </b>Bellingham, WA, USA</li>
+ 				<li class="player-bio-item"><b>Position: </b>Right Wing / Defenseman</li>
 				<li class="player-bio-item"><b>Shoots: </b>Left</li>
 			</ul>
 		</div>
@@ -84,7 +114,6 @@
 		<table class="full-tables">
 				<tr class="stats-row">
 					<th class="top-table-header" style="background-color:#6F263D"><b>Season</b></th>
-					<th class="top-table-header">Age</th>
 					<th class="top-table-header">Team</th>
 					<th class="top-table-header"><abbr title="Games Played">GP</abbr></th>
 					<th class="top-table-header">Goals</th>
@@ -94,7 +123,6 @@
 				</tr>
 				<tr class="stats-row">
 					<td class="left-table-header">2020-21</td>
-					<td>20</td>
 					<td>Avalanche</td>
 					<td>14</td>
 					<td>5</td>
@@ -104,7 +132,6 @@
 				</tr>
 				<tr class="stats-row">
 					<td class="left-table-header">2021-22</td>
-					<td>21</td>
 					<td>Avalanche</td>
 					<td>18</td>
 					<td>13</td>
@@ -114,7 +141,6 @@
 				</tr>
 				<tr class="stats-row">
 					<td class="left-table-header"><b>Career</b></td>
-					<td><b>-</b></td>
 					<td><b>-</b></td>
 					<td><b>32</b></td>
 					<td><b>18</b></td>
@@ -129,16 +155,7 @@
 </section>
 </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+
 
 </body>
 </html>

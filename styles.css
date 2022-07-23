@@ -4,7 +4,7 @@ body {
 
 /* Navigation Bar */
 .topnavfull {
-	background-color: #6F263D;
+	background-color: #111111;
 	height: 48px;
 	position: fixed;
 	left: 0;
@@ -14,7 +14,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #6F263D;
+  background-color: #111111;
   font-family: Arial;
   max-width: 1264px;
   margin: auto;
@@ -32,7 +32,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #236192;
+  background-color: #333333;
   color: white;
 }
 
@@ -73,31 +73,75 @@ tr.stats-row:hover:not(.active) {
 	margin: 0 auto;
 }
 
-.action-photo-image {
-	width: 100%;
-	margin-top: 48px;
-}
-
 .Headshot {
 	display: block;
+	position: relative;
+	width: 83.333333%;
+	margin-top: 5rem;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 50%;
-	box-shadow: 0px 0px 5px;
-	margin-top: -100px;
+}
+
+.profile-photo-team-logo {
+	width: 6rem;
+	position: absolute;
+	margin: 1rem;
+}
+
+.photo-name {
+	display: flex;
+	max-width: 1264px;
+	margin: auto;
+	align-items: center;
+}
+
+.full-player-photo-profile {
+	background-image: linear-gradient(#4d1a2a, #6F263D);
+	padding-top: 48px;
+}
+
+.player-headshot {
+	display: flex;
+	width: 33.333333%;
+}
+
+.player-name {
+	width: 66.666667%;
 	position: relative;
-	width: 160px;
+}
+
+.player-name-team-number {
+	font-size: 1rem;
+	font-family: Arial;
+	color: white;
+	margin: 0;
+}
+
+.big-background-logo {
+	width: 50%;
+	position: absolute;
+	opacity: .05;
+	transform: translateY(-35%);
+}
+
+.profile-name-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.player-name-text {
+	font-size: 60px;
+	font-family: Arial;
+	color: white;
+	font-weight: 700;
+	margin: 0;
 }
 
 section.attributes {
 	text-align: center;
-	font-family: Arial;
-	font-size: 100%;
-}
-
-span.attributes {
-	padding-left: 8px;
-	padding-right: 8px;
+	font-family: Oswald;
+	font-size: 30px;
+	color: white;
 }
 
 .name-number {
@@ -108,7 +152,7 @@ span.attributes {
 }
 
 .page {
-	background-color: #236192;
+	background-color: #DDDDDD;
 }
 
 .contents {
@@ -119,6 +163,11 @@ span.attributes {
 
 .profile {
 	padding-bottom: 20px;
+	padding-top: 20px;
+	background-color: #4d1a2a;
+	border-top-style: solid;
+	border-width: 1px;
+	border-color: #993454;
 }
 
 .main-container {
@@ -138,11 +187,12 @@ span.attributes {
 	box-sizing: border-box;
 	overflow: auto;
 	box-shadow: 0px 0px 5px grey;
+	border-radius: 5px;
 }
 
 .player-bio-list {
 	margin: 0;
-	font-family: Arial;
+	font-family: Sintony, Arial;
 	list-style: none;
 	line-height: 2;
 	padding: 0;
@@ -159,7 +209,7 @@ span.attributes {
 	padding-left: 8px;
 	padding-right: 8px;
 	font-weight: normal;
-	font-family: Arial;
+	font-family: Sintony, Arial;
 	background-color: #000000;
 	color: white;
 	border-collapse: collapse;
@@ -174,7 +224,7 @@ td {
 	padding-right: 8px;
 	padding-bottom: 13px;
 	padding-top: 13px;
-	font-family: Arial;
+	font-family: Sintony, Arial;
 	text-align: center;
 	font-size: 16px;
 	border-bottom: 1px solid #ddd;
@@ -206,6 +256,7 @@ td {
 	padding-right: 20px;
 	margin-top: 20px;
 	box-shadow: 0px 0px 5px grey;
+	border-radius: 5px;
 }
 
 .nonplayer-container {
@@ -217,6 +268,7 @@ td {
 	margin-top: 20px;
 	box-shadow: 0px 0px 5px grey;
 	margin-top: 48px;
+	border-radius: 5px;
 }
 
 .full-tables {
@@ -264,10 +316,38 @@ table {
 	td {
 		font-size: 80%;
 	}
-	
-	.Headshot {
-		width: 100px;
-		margin-top: -50px;
+
+	.player-name-text {
+		font-size: 2.25rem;
+	}
+
+	.player-name {
+		width: 50%;
+	}
+
+	.profile {
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+
+	.player-name-team-number {
+		font-size: .8rem;
+	}
+
+	.profile-photo-team-logo {
+		width: 4rem;
+	}
+
+	.player-headshot {
+		width: 50%;
+	}
+
+	.attributes {
+		font-size: 1rem;
+	}
+
+	span.attributes {
+		padding: 0;
 	}
 }
 
@@ -275,6 +355,11 @@ table {
 	.season-stats {
 		width: 66.66666%;
 		float: left;
+	}
+
+	span.attributes {
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 	
 	.player-bio {
@@ -317,5 +402,54 @@ table {
 	
 	.image-column img {
 		padding: 2px;
+	}
+}
+
+/* Home page content */
+.left-home {
+	width: 66%;
+}
+.left-subcontainer {
+	margin: 16px;
+}
+.right-home {
+	width: 33%;
+	margin-right: 0;
+	margin-left: auto;
+}
+.right-subcontainer {
+	background-color: #6F263D;
+	height: 100%;
+	color: white;
+	font-family: Oswald;
+	font-size: 25px;
+	padding: 16px;
+	box-shadow: 0px 0px 5px grey;
+}
+.right-subcontainer h1 {
+	text-align: center;
+	margin: 16px;
+}
+.middle {
+	text-align: center;
+}
+hr {
+	margin: auto;
+	width: 40%;
+}
+.countdown {
+	font-size: 30px;
+	margin: 16px;
+}
+/* Home page PHONE/MOBILE */
+@media screen and (max-width: 768px) {
+	.left-home {
+		width: 100%;
+	}
+	
+	.right-home {
+		width: 100%;
+		margin-right: 0;
+		margin-left: auto;
 	}
 }

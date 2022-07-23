@@ -3,8 +3,9 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Sintony:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="./images/bellingham_avalanche_icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -12,8 +13,7 @@
 	<div class="topnavfull">
 		<div class="topnav" id="myTopnav">
 			<a href="index.html" style="padding:5px;"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="height:33px;"></a>
-			<a href="index.html">Roster</a>
-			<a href="#contact">Schedule</a>
+			<a href="./rosters/roster2022-23.html">Roster</a>
 			<a href="gallery.html">Photo Gallery</a>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
@@ -23,65 +23,23 @@
 <div class="page">
 <section class="contents">
 	<section class="main-container">
-	<section class="nonplayer-container">
-		<h1 class="stats-heading">ROSTER</h1>
-		<h1 class="roster-positions">Forwards</h1>
-		<div style="overflow: auto;">
-		<table class="roster-names">
-				<tr>
-					<th class="top-table-header">Player</th>
-					<th class="top-table-header">#</th>
-					<th class="top-table-header">Position</th>
-					<th class="top-table-header">Shoots</th>
-					<th class="top-table-header">Height</th>
-					<th class="top-table-header">Born</th>
-					<th class="top-table-header">Birthplace</th>
-				</tr>
-				<tr>
-					<td class="left-table-header"><a href="players/stats_chase.html" class="name-hover">Chase Noble</a></td>
-					<td>27</td>
-					<td>RW</td>
-					<td>L</td>
-					<td>5' 7"</td>
-					<td>Apr 27, 2000</td>
-					<td>Bellingham, WA, USA</td>
-				</tr>
-				<tr>
-					<td class="left-table-header"><a href="players/stats_carter.html" class="name-hover">Carter Poynter</a></td>
-					<td>96</td>
-					<td>C</td>
-					<td>L</td>
-					<td>5' 8"</td>
-					<td>Mar 15, 2000</td>
-					<td>Bellingham, WA, USA</td>
-				</tr>
-		</table>
-		</div>
-		<h1 class="roster-positions">Defense</h1>
-		<div style="overflow: auto;">
-		<table class="roster-names">
-				<tr>
-					<th class="top-table-header">Player</th>
-					<th class="top-table-header">#</th>
-					<th class="top-table-header">Position</th>
-					<th class="top-table-header">Shoots</th>
-					<th class="top-table-header">Height</th>
-					<th class="top-table-header">Born</th>
-					<th class="top-table-header">Birthplace</th>
-				</tr>
-				<tr>
-					<td class="left-table-header"><a href="players/stats_brian.html" class="name-hover">Brian Poynter</a></td>
-					<td>10</td>
-					<td>D</td>
-					<td>L</td>
-					<td>5' 9"</td>
-					<td>Jul 31, 1971</td>
-					<td>Bellingham, WA, USA</td>
-				</tr>
-		</table>
-		</div>
-		<h1 class="roster-positions">Goalies</h1>
-	</section>
+		<section class="nonplayer-container">
+			<div class="right-home">
+				<div class="right-subcontainer">
+						<div class="middle">
+							<h1>NEXT GAME</h1>
+							<p>May 18, 2022 7:30 PM</p>
+							<hr>
+							<p id="demo" class="countdown"></p>
+						</div>
+				</div>
+			</div>
+			<div class="left-home">
+				<div class="left-subcontainer">
+					
+				</div>
+			</div>
+		</section>
 	</section>
 </section>
 </div>
@@ -95,6 +53,35 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+// Set the date we're counting down to
+var countDownDate = new Date("May 18, 2022 19:50:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "RIGHT NOW";
+  }
+}, 1000);
 </script>
 
 </body>
