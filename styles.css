@@ -361,6 +361,14 @@ table {
 		padding-left: 5px;
 		font-size: 14px;
 	}
+
+	.big-table-header {
+		display: none;
+	}
+
+	.small-table-header {
+		display: inline-block;
+	}
 }
 
 @media screen and (min-width: 768px) {	
@@ -378,6 +386,14 @@ table {
 		background-color: white;
 		float: left;
 		width: 33.33333333%
+	}
+
+	.big-table-header {
+		display: inline-block;
+	}
+
+	.small-table-header {
+		display: none;
 	}
 }
 
