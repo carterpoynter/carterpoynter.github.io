@@ -285,10 +285,7 @@ td {
 	align: left;
 }
 
-.name-hover {
-	text-decoration: none;
-	color: black;
-}
+
 
 table {
 	width: 100%;
@@ -369,6 +366,18 @@ table {
 	.small-table-header {
 		display: inline-block;
 	}
+
+	.name-hover {
+		text-decoration: none;
+		color: black;
+		display: none;
+	}
+
+	.name-hover-small {
+		text-decoration: none;
+		color: black;
+		display: inline-block;
+	}
 }
 
 @media screen and (min-width: 768px) {	
@@ -393,6 +402,18 @@ table {
 	}
 
 	.small-table-header {
+		display: none;
+	}
+
+	.name-hover {
+		text-decoration: none;
+		color: black;
+		display: inline-block;
+	}
+
+	.name-hover-small {
+		text-decoration: none;
+		color: black;
 		display: none;
 	}
 }
