@@ -463,7 +463,6 @@ table {
 .left-subcontainer {
 	margin-bottom: 20px;
 	border-radius: 5px;
-	background-color: white;
 	box-shadow: 0px 0px 5px grey;
 	overflow: auto;
 }
@@ -482,6 +481,23 @@ table {
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
+
+/*TEMPORARY VVVVVVVV*/
+.next-game {
+	height: auto;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	padding: 30px;
+	background-color: #4d1a2a;
+	color: white;
+}
+.next-game h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 50px;
+}
+/*TEMPORARY ^^^^^^^^*/
+
 .roster-link {
 	text-decoration: none;
 	overflow: auto;
@@ -491,7 +507,7 @@ table {
 	overflow: auto;
 }
 .gallery-button {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/gallery_photos/team2.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/gallery_photos/team2.jpg");
 	color: white;
 	height: auto;
 	font-family: 'Oswald', sans-serif;
@@ -559,6 +575,7 @@ table {
 	border-radius: 5px;
 	background-color: white;
 	box-shadow: 0px 0px 5px grey;
+	margin-bottom: 20px;
 }
 .leaderboard_header {
 	text-align: center;
@@ -594,16 +611,27 @@ table {
 	.gallery-button {
 		font-size: 50px;
 		background-size: auto 200%;
+		padding: 20px;
 	}
 	.gallery-button h1 {
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	.roster-button {
 		font-size: 50px;
+		padding: 20px;
 	}
 	.roster-button h1 {
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.next-game {
+		padding: 20px;
+	}
+	.next-game h1 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 35px;
 	}
 }
