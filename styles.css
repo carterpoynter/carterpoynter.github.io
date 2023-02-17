@@ -482,7 +482,7 @@ table {
 	margin-bottom: 100px;
 }
 
-/*TEMPORARY VVVVVVVV*/
+/*COUNTDOWN (TEMPORARY?) VVVVVVVV*/
 .next-game {
 	height: auto;
 	font-family: 'Oswald', sans-serif;
@@ -496,7 +496,7 @@ table {
 	margin-bottom: 10px;
 	font-size: 50px;
 }
-/*TEMPORARY ^^^^^^^^*/
+/*COUNTDOWN (TEMPORARY?) ^^^^^^^^*/
 
 .roster-link {
 	text-decoration: none;
@@ -610,7 +610,7 @@ table {
 	}
 	.gallery-button {
 		font-size: 50px;
-		background-size: auto 200%;
+		background-size: 100% auto;
 		padding: 20px;
 	}
 	.gallery-button h1 {
