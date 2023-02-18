@@ -27,6 +27,13 @@
 		<section class="homepage-container">
 			<div class="left-home">
 				<div class="left-subcontainer">
+					<div class="next-game">
+						<h1 >NEXT GAME</h1>
+						<h1 >WEDNESDAY, FEBRUARY 22ND, 8:45 PM</h1>
+						<h1 id="demo"></h1>
+					</div>
+				</div>
+				<div class="left-subcontainer">
 					<a class="roster-link" href="./rosters/roster2022-23.html">
 						<div class="roster-button">
 							<h1>ROSTER</h1>
@@ -168,6 +175,35 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 22, 2023 20:45:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "GAME TIME!";
+  }
+}, 1000);
 </script>
 
 </body>
