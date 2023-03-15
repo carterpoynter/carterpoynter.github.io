@@ -7,65 +7,56 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/x-icon" href="./images/bellingham_avalanche_icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body>
-	<div class="topnavfull">
-		<div class="topnav" id="myTopnav">
-			<a href="index.html" style="padding:5px;"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="height:33px;"></a>
-			<a href="./rosters/roster2022-23.html">Roster</a>
-			<a href="gallery.html">Photo Gallery</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
-			</a>
-		</div>
-	</div>
-<div class="page">
-<section class="contents">
-	<section class="main-container">
-	<section class="nonplayer-container">
-		<h1 class="stats-heading">Photo Gallery</h1>
-		<div class="image-row"> 
-			<div class="image-column">
-				<img src="images/gallery_photos/sean1.jpg" style="width:100%">
-				<img src="images/gallery_photos/brian1.jpg" style="width:100%">
-				<img src="images/gallery_photos/team4.jpg" style="width:100%">
-				<img src="images/gallery_photos/chase3.jpg" style="width:100%">
-				<img src="images/gallery_photos/chase1.jpg" style="width:100%">
-				<img src="images/gallery_photos/kevin1.jpg" style="width:100%">
-				<img src="images/gallery_photos/carter3.jpg" style="width:100%">
-				<img src="images/gallery_photos/chase2.jpg" style="width:100%">
-				<img src="images/gallery_photos/team2.jpg" style="width:100%">
-				<img src="images/gallery_photos/ryan2.jpg" style="width:100%">
-			</div>
-			<div class="image-column">
-				<img src="images/gallery_photos/rick1.jpg" style="width:100%">
-				<img src="images/gallery_photos/carter4.jpg" style="width:100%">
-				<img src="images/gallery_photos/pat1.jpg" style="width:100%">
-				<img src="images/gallery_photos/team3.jpg" style="width:100%">
-				<img src="images/gallery_photos/ryan1.jpg" style="width:100%">
-				<img src="images/gallery_photos/aleksey1.jpg" style="width:100%">
-				<img src="images/gallery_photos/team1.jpg" style="width:100%">
-				<img src="images/gallery_photos/carter2.jpg" style="width:100%">
-				<img src="images/gallery_photos/chase&doug.jpg" style="width:100%">
-				<img src="images/gallery_photos/carter1.jpg" style="width:100%">
-			</div>
-		</div>
-	</section>
-	</section>
-</section>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
 </div>
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+$(function(){
+  $("#nav-placeholder").load("navigation.html");
+});
 </script>
+<!--end of Navigation bar-->
 
+<body>
+	<div class="page">
+		<section class="contents">
+			<section class="main-container">
+				<section class="nonplayer-container">
+					<h1 class="stats-heading">Photo Gallery</h1>
+					<div class="image-row"> 
+						<div class="image-column">
+							<img src="images/gallery_photos/sean1.jpg" style="width:100%">
+							<img src="images/gallery_photos/brian1.jpg" style="width:100%">
+							<img src="images/gallery_photos/team4.jpg" style="width:100%">
+							<img src="images/gallery_photos/chase3.jpg" style="width:100%">
+							<img src="images/gallery_photos/chase1.jpg" style="width:100%">
+							<img src="images/gallery_photos/kevin1.jpg" style="width:100%">
+							<img src="images/gallery_photos/carter3.jpg" style="width:100%">
+							<img src="images/gallery_photos/chase2.jpg" style="width:100%">
+							<img src="images/gallery_photos/team2.jpg" style="width:100%">
+							<img src="images/gallery_photos/ryan2.jpg" style="width:100%">
+						</div>
+						<div class="image-column">
+							<img src="images/gallery_photos/rick1.jpg" style="width:100%">
+							<img src="images/gallery_photos/carter4.jpg" style="width:100%">
+							<img src="images/gallery_photos/pat1.jpg" style="width:100%">
+							<img src="images/gallery_photos/team3.jpg" style="width:100%">
+							<img src="images/gallery_photos/ryan1.jpg" style="width:100%">
+							<img src="images/gallery_photos/aleksey1.jpg" style="width:100%">
+							<img src="images/gallery_photos/team1.jpg" style="width:100%">
+							<img src="images/gallery_photos/carter2.jpg" style="width:100%">
+							<img src="images/gallery_photos/chase&doug.jpg" style="width:100%">
+							<img src="images/gallery_photos/carter1.jpg" style="width:100%">
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</div>
 </body>
 </html>
