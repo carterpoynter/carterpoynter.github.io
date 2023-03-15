@@ -7,48 +7,29 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/x-icon" href="../images/bellingham_avalanche_icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-<!-- Json Data location -->
-	<script type="text/javascript">
-		let obj.name = params.get("name");
-	
-		window.onload = function() {
-			document.getElementById("ma").innerHTML = obj.name + " | " + obj.age;
-		}
-	</script>
-
-<!-- Navigation bar JavaScript -->
-	<script>
-		function myFunction() {
-			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") {
-				x.className += " responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-	</script>
-
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("../navigation.html");
+});
+</script>
+<!--end of Navigation bar-->
+
 <body>
-	<div class="topnavfull">
-		<div class="topnav" id="myTopnav">
-			<a href="../index.html" style="padding:5px;"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="height:33px;"></a>
-			<a href="../rosters/roster2022-23.html">Roster</a>
-			<a href="../gallery.html">Photo Gallery</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
-			</a>
-		</div>
-	</div>
 <div class="page">
 <div class="full-player-photo-profile">
 	<div class="profile-name-container">
 		<img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="big-background-logo">
 	<section class="photo-name">
 		<div class="player-headshot">
-			<a href="../rosters/roster2022-23.html"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="profile-photo-team-logo"></a>
+			<a href="https://bellinghamavs.com/rosters/roster2022-23"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="profile-photo-team-logo"></a>
 			<img src="../images/profiles/jake_profile.png" alt="Player Headshot" class="Headshot">
 		</div>
 		<div class="player-name">

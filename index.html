@@ -8,167 +8,158 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/x-icon" href="./images/bellingham_avalanche_icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body>
-	<div class="topnavfull">
-		<div class="topnav" id="myTopnav">
-			<a href="index.html" style="padding:5px;"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="height:33px;"></a>
-			<a href="./rosters/roster2022-23.html">Roster</a>
-			<a href="gallery.html">Photo Gallery</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
-			</a>
-		</div>
-	</div>
-<div class="page">
-<section class="contents">
-	<section class="main-container">
-		<section class="homepage-container">
-			<div class="left-home">
-				<div class="left-subcontainer">
-					<a class="roster-link" href="./rosters/roster2022-23.html">
-						<div class="roster-button">
-							<h1>ROSTER</h1>
-						</div>
-					</a>
-				</div>
-				<div class="left-subcontainer">
-					<a class="gallery-link-homepage" href="./gallery.html">
-						<div class="gallery-button">
-							<h1>GALLERY</h1>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="right-home">
-				<div class="right-subcontainer">
-					<h1 class="leaderboard_header">POINT LEADERS</h1>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_patrick.html"><img src="./images/profiles/patrick_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_patrick.html">Patrick McHale</a></h1>
-							<p>#11 - C</p>
-							<div class="leaderboard_entries_points"><h1>51</h1><p>POINTS</p></div>
-						</div>
-					</div>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_chase.html"><img src="./images/profiles/chase_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_chase.html">Chase Noble</a></h1>
-							<p>#27 - RW</p>
-							<div class="leaderboard_entries_points"><h1>37</h1><p>POINTS</p></div>
-						</div>
-					</div>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_carter.html"><img src="./images/profiles/carter_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_carter.html">Carter Poynter</a></h1>
-							<p>#96 - C</p>
-							<div class="leaderboard_entries_points"><h1>32</h1><p>POINTS</p></div>
-						</div>
-					</div>
-				</div>
+<!--Navigation bar-->
+<div id="nav-placeholder">
 
-				<div class="right-subcontainer">
-					<h1 class="leaderboard_header">GOAL LEADERS</h1>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_patrick.html"><img src="./images/profiles/patrick_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_patrick.html">Patrick McHale</a></h1>
-							<p>#11 - C</p>
-							<div class="leaderboard_entries_points"><h1>31</h1><p>GOALS</p></div>
-						</div>
-					</div>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_chase.html"><img src="./images/profiles/chase_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_chase.html">Chase Noble</a></h1>
-							<p>#27 - RW</p>
-							<div class="leaderboard_entries_points"><h1>16</h1><p>GOALS</p></div>
-						</div>
-					</div>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_carter.html"><img src="./images/profiles/carter_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_carter.html">Carter Poynter</a></h1>
-							<p>#96 - C</p>
-							<div class="leaderboard_entries_points"><h1>13</h1><p>GOALS</p></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="right-subcontainer">
-					<h1 class="leaderboard_header">ASSIST LEADERS</h1>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_chase.html"><img src="./images/profiles/chase_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_chase.html">Chase Noble</a></h1>
-							<p>#27 - RW</p>
-							<div class="leaderboard_entries_points"><h1>21</h1><p>ASSISTS</p></div>
-						</div>
-					</div>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_patrick.html"><img src="./images/profiles/patrick_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_patrick.html">Patrick McHale</a></h1>
-							<p>#11 - C</p>
-							<div class="leaderboard_entries_points"><h1>20</h1><p>ASSISTS</p></div>
-						</div>
-					</div>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_carter.html"><img src="./images/profiles/carter_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_carter.html">Carter Poynter</a></h1>
-							<p>#96 - C</p>
-							<div class="leaderboard_entries_points"><h1>19</h1><p>ASSISTS</p></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="right-subcontainer">
-					<h1 class="leaderboard_header">PENALTY LEADERS</h1>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_aleksey.html"><img src="./images/profiles/aleksey_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_aleksey.html">Aleksey Kashubin</a></h1>
-							<p>#14 - D</p>
-							<div class="leaderboard_entries_points"><h1>27</h1><p>PENALTY MINUTES</p></div>
-						</div>
-					</div>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_rick.html"><img src="./images/profiles/rick_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_rick.html">Rick Jeffries</a></h1>
-							<p>#55 - D</p>
-							<div class="leaderboard_entries_points"><h1>16</h1><p>PENALTY MINUTES</p></div>
-						</div>
-					</div>
-					<div class="leaderboard_player">
-						<div class="leaderboard_avatar"><a href="./players/stats_chase.html"><img src="./images/profiles/chase_profile.png"></a></div>
-						<div class="leaderboard_entries_info">
-							<h1><a href="./players/stats_chase.html">Chase Noble</a></h1>
-							<p>#27 - RW</p>
-							<div class="leaderboard_entries_points"><h1>15</h1><p>PENALTY MINUTES</p></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</section>
-</section>
 </div>
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+$(function(){
+  $("#nav-placeholder").load("../navigation.html");
+});
 </script>
+<!--end of Navigation bar-->
 
+<body>
+	<div class="page">
+		<section class="contents">
+			<section class="main-container">
+				<section class="homepage-container">
+					<div class="left-home">
+						<div class="left-subcontainer">
+							<a class="roster-link" href="https://bellinghamavs.com/rosters/roster2022-23">
+								<div class="roster-button">
+									<h1>ROSTER</h1>
+								</div>
+							</a>
+						</div>
+						<div class="left-subcontainer">
+							<a class="gallery-link-homepage" href="https://bellinghamavs.com/gallery">
+								<div class="gallery-button">
+									<h1>GALLERY</h1>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="right-home">
+						<div class="right-subcontainer">
+							<h1 class="leaderboard_header">POINT LEADERS</h1>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_patrick"><img src="./images/profiles/patrick_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_patrick">Patrick McHale</a></h1>
+									<p>#11 - C</p>
+									<div class="leaderboard_entries_points"><h1>51</h1><p>POINTS</p></div>
+								</div>
+							</div>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_chase"><img src="./images/profiles/chase_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_chase">Chase Noble</a></h1>
+									<p>#27 - RW</p>
+									<div class="leaderboard_entries_points"><h1>37</h1><p>POINTS</p></div>
+								</div>
+							</div>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_carter"><img src="./images/profiles/carter_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_chase">Carter Poynter</a></h1>
+									<p>#96 - C</p>
+									<div class="leaderboard_entries_points"><h1>32</h1><p>POINTS</p></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="right-subcontainer">
+							<h1 class="leaderboard_header">GOAL LEADERS</h1>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_patrick"><img src="./images/profiles/patrick_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_patrick">Patrick McHale</a></h1>
+									<p>#11 - C</p>
+									<div class="leaderboard_entries_points"><h1>31</h1><p>GOALS</p></div>
+								</div>
+							</div>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_chase"><img src="./images/profiles/chase_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_chase">Chase Noble</a></h1>
+									<p>#27 - RW</p>
+									<div class="leaderboard_entries_points"><h1>16</h1><p>GOALS</p></div>
+								</div>
+							</div>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_carter"><img src="./images/profiles/carter_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_carter">Carter Poynter</a></h1>
+									<p>#96 - C</p>
+									<div class="leaderboard_entries_points"><h1>13</h1><p>GOALS</p></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="right-subcontainer">
+							<h1 class="leaderboard_header">ASSIST LEADERS</h1>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_chase"><img src="./images/profiles/chase_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_chase">Chase Noble</a></h1>
+									<p>#27 - RW</p>
+									<div class="leaderboard_entries_points"><h1>21</h1><p>ASSISTS</p></div>
+								</div>
+							</div>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_patrick"><img src="./images/profiles/patrick_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_patrick">Patrick McHale</a></h1>
+									<p>#11 - C</p>
+									<div class="leaderboard_entries_points"><h1>20</h1><p>ASSISTS</p></div>
+								</div>
+							</div>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_carter"><img src="./images/profiles/carter_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_carter">Carter Poynter</a></h1>
+									<p>#96 - C</p>
+									<div class="leaderboard_entries_points"><h1>19</h1><p>ASSISTS</p></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="right-subcontainer">
+							<h1 class="leaderboard_header">PENALTY LEADERS</h1>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_aleksey"><img src="./images/profiles/aleksey_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_aleksey">Aleksey Kashubin</a></h1>
+									<p>#14 - D</p>
+									<div class="leaderboard_entries_points"><h1>27</h1><p>PENALTY MINUTES</p></div>
+								</div>
+							</div>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_rick"><img src="./images/profiles/rick_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_rick">Rick Jeffries</a></h1>
+									<p>#55 - D</p>
+									<div class="leaderboard_entries_points"><h1>16</h1><p>PENALTY MINUTES</p></div>
+								</div>
+							</div>
+							<div class="leaderboard_player">
+								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_chase"><img src="./images/profiles/chase_profile.png"></a></div>
+								<div class="leaderboard_entries_info">
+									<h1><a href="https://bellinghamavs.com/players/stats_chase">Chase Noble</a></h1>
+									<p>#27 - RW</p>
+									<div class="leaderboard_entries_points"><h1>15</h1><p>PENALTY MINUTES</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</div>
 </body>
 </html>
