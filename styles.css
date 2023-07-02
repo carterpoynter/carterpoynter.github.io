@@ -114,7 +114,7 @@ tr.stats-row:hover:not(.active) {
 
 .player-name-team-number {
 	font-size: 1rem;
-	font-family: Arial;
+	font-family: 'Sintony', sans-serif;
 	color: white;
 	margin: 0;
 }
@@ -133,7 +133,7 @@ tr.stats-row:hover:not(.active) {
 
 .player-name-text {
 	font-size: 60px;
-	font-family: Arial;
+	font-family: 'Titillium Web', sans-serif;
 	color: white;
 	font-weight: 700;
 	margin: 0;
@@ -141,9 +141,10 @@ tr.stats-row:hover:not(.active) {
 
 section.attributes {
 	text-align: center;
-	font-family: Oswald;
+	font-family: 'Titillium Web';
 	font-size: 30px;
 	color: white;
+	font-weight: 600;
 }
 
 .name-number {
@@ -264,13 +265,14 @@ td {
 	font-weight: 700;
 }
 
-.career-row {
+.career-row td {
 	font-weight: bold;
 }
 
 .bold-table-season {
 	text-align: left;
 	background-color: #ddd;
+	font-weight: bold;
 }
 
 .sub-container {
