@@ -13,22 +13,24 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: #111111;
-  font-family: Arial;
-  max-width: 1264px;
-  margin: auto;
+	overflow: hidden;
+	background-color: #111111;
+	font-family: 'Titillium Web', sans-serif;
+	max-width: 1264px;
+	margin: auto;
+	font-style: italic;
+	font-weight: 600;
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 17px;
+	float: left;
+	display: block;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 11px 16px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 17px;
 }
 
 .topnav a:hover {
@@ -40,7 +42,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -48,7 +50,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -203,7 +205,7 @@ section.attributes {
 	border-right: 1px solid #ddd;
 }
 
-.top-table-header {
+.top-table-header th {
 	padding-bottom: 20px;
 	padding-top: 20px;
 	padding-left: 8px;
@@ -229,7 +231,8 @@ td {
 	padding-right: 6px;
 	padding-bottom: 12px;
 	padding-top: 12px;
-	font-family: Sintony, Arial;
+	font-family: 'Sintony', sans-serif;
+	font-weight: 400;
 	text-align: center;
 	font-size: 16px;
 	border-bottom: 1px solid #ddd;
@@ -242,15 +245,32 @@ td {
 	background-color: #ddd;
 }
 
+.name-hover {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+}
+
 .name-hover:hover:not(.active) {
 	color: #236192;
 }
 
 .stats-heading {
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 48px;
 	text-transform: none;
 	text-align: center;
+	font-style: italic;
+	font-weight: 700;
+}
+
+.career-row {
+	font-weight: bold;
+}
+
+.bold-table-season {
+	text-align: left;
+	background-color: #ddd;
 }
 
 .sub-container {
@@ -281,11 +301,9 @@ td {
 
 .roster-positions {
 	font-family: Montserrat;
-	font-size: 40px;
-	align: left;
+	font-size: 30px;
+	text-align: left;
 }
-
-
 
 table {
 	width: 100%;
@@ -318,13 +336,13 @@ table {
 }
 
 .outer-wrapper {
-	max-width: 768px;
+	max-width: 769px;
 	margin: auto;
 }
 
 /* Phone Sizing */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 	.stats-heading {
 		margin-bottom: 10px;
 		margin-top: 0;
@@ -389,21 +407,9 @@ table {
 	.small-table-header {
 		display: inline-block;
 	}
-
-	.name-hover {
-		text-decoration: none;
-		color: black;
-		display: none;
-	}
-
-	.name-hover-small {
-		text-decoration: none;
-		color: black;
-		display: inline-block;
-	}
 }
 
-@media screen and (min-width: 768px) {	
+@media screen and (min-width: 770px) {	
 	.season-stats {
 		width: 66.66666%;
 		float: left;
@@ -427,18 +433,6 @@ table {
 	.small-table-header {
 		display: none;
 	}
-
-	.name-hover {
-		text-decoration: none;
-		color: black;
-		display: inline-block;
-	}
-
-	.name-hover-small {
-		text-decoration: none;
-		color: black;
-		display: none;
-	}
 }
 
 /* Image Gallery */
@@ -452,8 +446,22 @@ table {
 	line-height: 0;
 }
 
+.gallery_image_wrapper {
+	overflow: hidden;
+	border-radius: 10px;
+	margin: 4px;
+	margin-bottom: 8px;
+
+}
+
 .image-column img {
-	padding: 4px;
+	transition: transform .2s;
+}
+
+.image-column img:hover {
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
 }
 
 /* Clear floats after the columns */
@@ -464,7 +472,7 @@ table {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 	.image-column {
 		float: left;
 		width: 50%;
@@ -495,10 +503,13 @@ table {
 	background-position: center;
 	color: white;
 	height: auto;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Titillium', sans-serif;
 	font-size: 72px;
+	font-weight: 700;
+	font-style: italic;
 	text-align: center;
 	padding: 30px;
+	letter-spacing: -2px;
 }
 .roster-button h1 {
 	margin-top: 100px;
@@ -533,12 +544,15 @@ table {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/gallery_photos/team2.jpg");
 	color: white;
 	height: auto;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Titillium', sans-serif;
 	font-size: 72px;
 	text-align: center;
 	padding: 30px;
 	background-size: auto 140%;
 	background-position: center;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: -2px;
 }
 .gallery-button h1 {
 	margin-top: 120px;
@@ -592,13 +606,15 @@ table {
 	overflow: auto;
 }
 .right-subcontainer {
-	font-family: 'Oswald';
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 25px;
 	padding: 16px;
 	border-radius: 5px;
 	background-color: white;
 	box-shadow: 0px 0px 5px grey;
 	margin-bottom: 20px;
+	font-weight: 600;
+	font-style: italic;
 }
 .leaderboard_header {
 	text-align: center;
@@ -606,7 +622,7 @@ table {
 	margin-bottom: 0px;
 }
 /* Home page only on PC */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 770px) {
 	.homepage-container {
 		display: flex;
 	}
@@ -621,7 +637,7 @@ table {
 	}
 }
 /* Home page PHONE/MOBILE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 	.left-home {
 		width: 100%;
 	}

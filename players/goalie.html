@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+	<link rel="stylesheet" href="../styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sintony&family=Titillium+Web:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="../images/bellingham_avalanche_icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("../navigation.html");
+});
+
+const table = document.querySelector('.full-tables');
+
+</script>
+<!--end of Navigation bar-->
+
+<body>
+	<div class="page">
+		<div class="full-player-photo-profile">
+			<div class="profile-name-container">
+				<img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="big-background-logo">
+				<section class="photo-name">
+					<div class="player-headshot">
+						<a href="https://bellinghamavs.com/rosters/roster2022-23"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="profile-photo-team-logo"></a>
+						<img src="../images/profiles/skater.png" alt="Player Headshot" class="Headshot">
+					</div>
+					<div class="player-name">
+						<span class="player-name-team-number">Bellingham Avalanche</span>
+						<span class="player-name-team-number">|</span>
+						<span class="player-name-team-number player-number"></span>
+						<span class="player-name-team-number">|</span>
+						<span class="player-name-team-number player-position"></span>
+						<p class="player-name-text player-firstname"></p>
+						<p class="player-name-text player-lastname"></p>
+					</div>
+				</section>
+			</div>
+			<section class="profile">
+				<section class="attributes">
+					<span class="attributes player-position"></span>
+					<span class="attributes"> | </span>
+					<span class="attributes player-number"></span>
+					<span class="attributes"> | </span>
+					<span class="attributes"><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Colorado_Avalanche_logo.svg" alt="Avalanche Logo" class="avalanche-logo" style="width:40px;vertical-align:middle;background-position:center;"></span>
+					<span class="attributes">Bellingham Avalanche</span>
+				</section>
+			</section>
+		</div>
+	<section class="contents">
+		<section class="main-container">
+			<section class="personal-season">
+				<div class="player-bio">
+					<ul class="player-bio-list">
+  						<li class="player-bio-item player-fullname"></li>
+ 						<li class="player-bio-item"><span><b>Position: </b></span><span class="player-position"></span></li>
+						<li class="player-bio-item"><span><b>Catches: </b></span><span class="player-shoots"></span></li>
+					</ul>
+				</div>
+				<div class="season-stats">
+					<table class="current-season-stats">
+						<tr class="stats-row">
+							<th class="top-table-header" style="background-color:#6F263D;"><b>Season</b></th>
+							<th class="top-table-header"><abbr title="Games Played">GP</abbr></th>
+							<th class="top-table-header"><abbr title="Wins">W</abbr></th>
+							<th class="top-table-header"><abbr title="Losses">L</abbr></th>
+							<th class="top-table-header"><abbr title="Goals Against Average">GAA</abbr></th>
+							<th class="top-table-header"><abbr title="Shutouts">SO</abbr></th>
+						</tr>
+						<tbody id="current-season-stats-body"></tbody>
+						<tbody class="career-row" id="career-row-noteam"></tbody>
+					</table>
+				</div>
+			</section>
+			<section class="sub-container">
+				<h1 class="stats-heading">Stats</h1>
+				<div style="overflow: auto;">
+					<table class="full-tables">
+						<tr class="stats-row">
+							<th class="top-table-header" style="background-color:#6F263D"><b>Season</b></th>
+							<th class="top-table-header">Team</th>
+							<th class="top-table-header"><abbr title="Games Played">GP</abbr></th>
+							<th class="top-table-header"><abbr title="Wins">W</abbr></th>
+							<th class="top-table-header"><abbr title="Losses">L</abbr></th>
+							<th class="top-table-header"><abbr title="Goals Against Average">GAA</abbr></th>
+							<th class="top-table-header"><abbr title="Shutouts">SO</abbr></th>
+						</tr>
+						<tbody id="player-seasons"></tbody>
+						<tbody class="career-row"></tbody>
+					</table>
+				</div>
+			</section>
+		</section>
+	</section>
+	</div>
+
+<script>
+	// Get the player ID from the URL query parameter
+	const urlParams = new URLSearchParams(window.location.search);
+	const playerId = urlParams.get('id');
+
+	// Load the JSON data for the selected player
+	fetch('../data.json')
+		.then(response => response.json())
+		.then(data => {
+			const player = data.player.find(p => p.id === playerId);
+			if (!player) {
+				throw new Error('Invalid player ID: ' + playerId);
+			}
+
+			const playerImage = document.querySelector('.Headshot');
+			playerImage.src = `../images/profiles/${playerId}_profile.png`;
+
+			const playerFullnameElems = document.querySelectorAll('.player-fullname');
+			playerFullnameElems.forEach(elem => {
+				elem.textContent = player.firstName + ' ' + player.lastName;
+			});
+			
+			const playerPositionElems = document.querySelectorAll('.player-position');
+			playerPositionElems.forEach(elem => {
+				elem.textContent = player.position;
+			});
+			
+			const playerFirstnameElems = document.querySelectorAll('.player-firstname');
+			playerFirstnameElems.forEach(elem => {
+				elem.textContent = player.firstName;
+			});
+
+			const playerLastnameElems = document.querySelectorAll('.player-lastname');
+			playerLastnameElems.forEach(elem => {
+				elem.textContent = player.lastName;
+			});
+
+			const playerShootsElems = document.querySelectorAll('.player-shoots');
+			playerShootsElems.forEach(elem => {
+				elem.textContent = player.shoots;
+			});
+
+			const playerNumberElems = document.querySelectorAll('.player-number');
+			playerNumberElems.forEach(elem => {
+				elem.textContent = '#' + player.number;
+			});
+
+			const seasonsTable = document.getElementById('player-seasons');
+			for (const season in player.seasons) {
+				const row = seasonsTable.insertRow();
+				row.insertCell().textContent = season;
+				row.insertCell().textContent = player.seasons[season].Team;
+				row.insertCell().textContent = player.seasons[season].GamesPlayed;
+				row.insertCell().textContent = player.seasons[season].Wins;
+				row.insertCell().textContent = player.seasons[season].Losses;
+				const GoalsAgainstAverage = (player.seasons[season].GoalsAgainst / player.seasons[season].GamesPlayed).toFixed(2);
+				row.insertCell().textContent = GoalsAgainstAverage;
+				row.insertCell().textContent = player.seasons[season].Shutouts;
+				row.cells[0].classList.add('bold-table-season');
+			}
+
+			const currentSeason = "2022-23";
+			const currentSeasonStatsTableBody = document.getElementById('current-season-stats-body');
+			const currentSeasonData = player.seasons[currentSeason];
+			const currentSeasonRow = currentSeasonStatsTableBody.insertRow();
+			currentSeasonRow.insertCell().textContent = currentSeason;
+			currentSeasonRow.insertCell().textContent = currentSeasonData.GamesPlayed;
+			currentSeasonRow.insertCell().textContent = currentSeasonData.Wins;
+			currentSeasonRow.insertCell().textContent = currentSeasonData.Losses;
+			const currentSeasonAgainstAverage = (currentSeasonData.GoalsAgainst / currentSeasonData.GamesPlayed).toFixed(2);
+			currentSeasonRow.insertCell().textContent = currentSeasonAgainstAverage;
+			currentSeasonRow.insertCell().textContent = currentSeasonData.Shutouts;
+			currentSeasonRow.cells[0].classList.add('bold-table-season');
+
+			
+			const careerRows = document.querySelectorAll('.career-row');
+			careerRows.forEach(careerRow => {
+				const row = careerRow.insertRow();
+				row.insertCell().textContent = 'Career';
+				if (careerRow.id !== 'career-row-noteam') {
+					row.insertCell().textContent = '-';
+				}
+				let careerGamesPlayed = 0;
+				let careerWins = 0;
+				let careerLosses = 0;
+				let careerAgainstAverage = 0;
+				let careerShutouts = 0;
+				for (const season in player.seasons) {
+					const seasonData = player.seasons[season];
+					careerGamesPlayed += seasonData.GamesPlayed;
+					careerWins += seasonData.Wins;
+					careerLosses += seasonData.Losses;
+					careerAgainstAverage = (seasonData.GoalsAgainst / seasonData.GamesPlayed).toFixed(2);
+					careerShutouts += seasonData.Shutouts;
+				}
+				row.insertCell().textContent = careerGamesPlayed;
+				row.insertCell().textContent = careerWins;
+				row.insertCell().textContent = careerLosses;
+				row.insertCell().textContent = careerAgainstAverage;
+				row.insertCell().textContent = careerShutouts;
+				row.cells[0].classList.add('bold-table-season');
+			});
+		})
+		.catch(error => console.error(error));
+</script>
+
+</body>
+</html>

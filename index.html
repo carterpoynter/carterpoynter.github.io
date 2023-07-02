@@ -30,7 +30,7 @@ $(function(){
 				<section class="homepage-container">
 					<div class="left-home">
 						<div class="left-subcontainer">
-							<a class="roster-link" href="https://bellinghamavs.com/rosters/roster2022-23">
+							<a class="roster-link" href="https://bellinghamavs.com/rosters/rosterCurrent">
 								<div class="roster-button">
 									<h1>ROSTER</h1>
 								</div>
@@ -54,119 +54,99 @@ $(function(){
 					<div class="right-home">
 						<div class="right-subcontainer">
 							<h1 class="leaderboard_header">POINT LEADERS</h1>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_patrick"><img src="./images/profiles/patrick_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_patrick">Patrick McHale</a></h1>
-									<p>#11 - C</p>
-									<div class="leaderboard_entries_points"><h1>51</h1><p>POINTS</p></div>
-								</div>
-							</div>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_chase"><img src="./images/profiles/chase_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_chase">Chase Noble</a></h1>
-									<p>#27 - RW</p>
-									<div class="leaderboard_entries_points"><h1>36</h1><p>POINTS</p></div>
-								</div>
-							</div>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_jake"><img src="./images/profiles/jake_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_jake">Jake Sikich</a></h1>
-									<p>#77 - D</p>
-									<div class="leaderboard_entries_points"><h1>32</h1><p>POINTS</p></div>
-								</div>
-							</div>
+							<div id="leaderboard_points"></div>
 						</div>
 
 						<div class="right-subcontainer">
 							<h1 class="leaderboard_header">GOAL LEADERS</h1>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_patrick"><img src="./images/profiles/patrick_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_patrick">Patrick McHale</a></h1>
-									<p>#11 - C</p>
-									<div class="leaderboard_entries_points"><h1>31</h1><p>GOALS</p></div>
-								</div>
-							</div>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_chase"><img src="./images/profiles/chase_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_chase">Chase Noble</a></h1>
-									<p>#27 - RW</p>
-									<div class="leaderboard_entries_points"><h1>16</h1><p>GOALS</p></div>
-								</div>
-							</div>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_carter"><img src="./images/profiles/carter_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_carter">Carter Poynter</a></h1>
-									<p>#96 - C</p>
-									<div class="leaderboard_entries_points"><h1>13</h1><p>GOALS</p></div>
-								</div>
-							</div>
+							<div id="leaderboard_goals"></div>
 						</div>
 
 						<div class="right-subcontainer">
 							<h1 class="leaderboard_header">ASSIST LEADERS</h1>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_patrick"><img src="./images/profiles/patrick_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_patrick">Patrick McHale</a></h1>
-									<p>#11 - C</p>
-									<div class="leaderboard_entries_points"><h1>20</h1><p>ASSISTS</p></div>
-								</div>
-							</div>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_jake"><img src="./images/profiles/jake_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_jake">Jake Sikich</a></h1>
-									<p>#77 - D</p>
-									<div class="leaderboard_entries_points"><h1>20</h1><p>ASSISTS</p></div>
-								</div>
-							</div>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_chase"><img src="./images/profiles/chase_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_chase">Chase Noble</a></h1>
-									<p>#27 - RW</p>
-									<div class="leaderboard_entries_points"><h1>20</h1><p>ASSISTS</p></div>
-								</div>
-							</div>
+							<div id="leaderboard_assists"></div>
 						</div>
 
 						<div class="right-subcontainer">
-							<h1 class="leaderboard_header">PENALTY LEADERS</h1>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_aleksey"><img src="./images/profiles/aleksey_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_aleksey">Aleksey Kashubin</a></h1>
-									<p>#14 - D</p>
-									<div class="leaderboard_entries_points"><h1>27</h1><p>PENALTY MINUTES</p></div>
-								</div>
-							</div>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_rick"><img src="./images/profiles/rick_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_rick">Rick Jeffries</a></h1>
-									<p>#55 - D</p>
-									<div class="leaderboard_entries_points"><h1>16</h1><p>PENALTY MINUTES</p></div>
-								</div>
-							</div>
-							<div class="leaderboard_player">
-								<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/stats_chase"><img src="./images/profiles/chase_profile.png"></a></div>
-								<div class="leaderboard_entries_info">
-									<h1><a href="https://bellinghamavs.com/players/stats_chase">Chase Noble</a></h1>
-									<p>#27 - RW</p>
-									<div class="leaderboard_entries_points"><h1>15</h1><p>PENALTY MINUTES</p></div>
-								</div>
-							</div>
+							<h1 class="leaderboard_header">ASSIST LEADERS</h1>
+							<div id="leaderboard_penalties"></div>
 						</div>
 					</div>
 				</section>
 			</section>
 		</section>
 	</div>
+
+	<script>
+	fetch('../data.json')
+		.then(response => response.json())
+		.then(data => {
+			// Find the most recent season
+			const seasons = data.player.flatMap(player => Object.keys(player.seasons));
+			const validSeasons = seasons.filter(season => season !== 'undefined');
+			const latestSeason = validSeasons.reduce((a, b) => a > b ? a : b);
+
+			// Filter players for the latest season
+			const playersInLatestSeason = data.player.filter(player => latestSeason in player.seasons && player.seasons[latestSeason]);
+
+			// Define an array of statistics to consider
+			const statistics = ['Goals', 'Assists', 'Penalties'];
+
+			// Add 'Points' to the statistics array
+			statistics.push('Points');
+
+			// Iterate over each statistic
+			statistics.forEach(statistic => {
+			// Sort players based on the current statistic
+			const sortedPlayers = playersInLatestSeason.sort((a, b) => {
+				if (statistic === 'Points') {
+				const pointsA = a.seasons[latestSeason].Goals + a.seasons[latestSeason].Assists;
+				const pointsB = b.seasons[latestSeason].Goals + b.seasons[latestSeason].Assists;
+				return pointsB - pointsA;
+				} else {
+				return b.seasons[latestSeason][statistic] - a.seasons[latestSeason][statistic];
+				}
+			});
+		
+		// Get the top 3 players for the current statistic
+		const top3Players = sortedPlayers.slice(0, 3);
+
+		console.log(`Top 3 ${statistic}:`, top3Players);
+
+		// Display top 3 players for the current statistic on the page
+		const statisticContainer = document.getElementById(`leaderboard_${statistic.toLowerCase()}`);
+
+				top3Players.forEach(player => {
+					const playerCard = document.createElement('div');
+					if (statistic === 'Points') {
+						const points = player.seasons[latestSeason].Goals + player.seasons[latestSeason].Assists;
+						playerCard.innerHTML = `
+						<div class="leaderboard_player">
+							<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/skater?id=${player.id}"><img src="./images/profiles/${player.id}_profile.png"></a></div>
+							<div class="leaderboard_entries_info">
+								<h1><a href="https://bellinghamavs.com/players/skater?id=${player.id}">${player.firstName} ${player.lastName}</a></h1>
+								<p>#${player.number} - ${player.position}</p>
+								<div class="leaderboard_entries_points"><h1>${points}</h1><p>${statistic.toUpperCase()}</p></div>
+							</div>
+						</div>
+						`;
+					} else {
+						playerCard.innerHTML = `
+						<div class="leaderboard_player">
+							<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/skater?id=${player.id}"><img src="./images/profiles/${player.id}_profile.png"></a></div>
+							<div class="leaderboard_entries_info">
+								<h1><a href="https://bellinghamavs.com/players/skater?id=${player.id}">${player.firstName} ${player.lastName}</a></h1>
+								<p>#${player.number} - ${player.position}</p>
+								<div class="leaderboard_entries_points"><h1>${player.seasons[latestSeason][statistic]}</h1><p>${statistic.toUpperCase()}</p></div>
+							</div>
+						</div>
+						`;
+					}
+					statisticContainer.appendChild(playerCard);
+				});
+			});
+		})
+		.catch(error => console.error(error));
+	</script>
 </body>
 </html>

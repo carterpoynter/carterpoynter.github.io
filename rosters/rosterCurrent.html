@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sintony&family=Titillium+Web:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="../images/bellingham_avalanche_icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("../navigation.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<body>
+<div class="page">
+<section class="contents">
+	<section class="main-container">
+	<section class="nonplayer-container">
+		<h1 class="stats-heading">ROSTER</h1>
+		<h1 class="roster-positions">Forwards</h1>
+		<div style="overflow: auto;">
+		<table class="roster-names">
+				<thead class="top-table-header">
+					<tr>
+						<th>Player</th>
+						<th>#</th>
+						<th><span class="big-table-header">Position</span><span class="small-table-header">Pos</span></th>
+						<th><span class="big-table-header">Shoots</span><span class="small-table-header">Sh</span></th>
+						<th><abbr title="Games Played">GP</abbr></th>
+						<th><abbr title="Goals">G</abbr></th>
+						<th><abbr title="Assists">A</abbr></th>
+						<th><abbr title="Points">P</abbr></th>
+						<th><abbr title="Penalties In Minutes">PIM</abbr></th>
+					</tr>
+				</thead>
+				<tbody id="forwards-table-body">
+					<!-- Table rows for forwards will be dynamically added here -->
+				</tbody>
+		</table>
+		</div>
+		<h1 class="roster-positions">Defense</h1>
+		<div style="overflow: auto;">
+		<table class="roster-names">
+				<thead class="top-table-header">
+					<tr>
+						<th>Player</th>
+						<th>#</th>
+						<th><span class="big-table-header">Position</span><span class="small-table-header">Pos</span></th>
+						<th><span class="big-table-header">Shoots</span><span class="small-table-header">Sh</span></th>
+						<th><abbr title="Games Played">GP</abbr></th>
+						<th><abbr title="Goals">G</abbr></th>
+						<th><abbr title="Assists">A</abbr></th>
+						<th><abbr title="Points">P</abbr></th>
+						<th><abbr title="Penalties In Minutes">PIM</abbr></th>
+					</tr>
+				</thead>
+				<tbody id="defensemen-table-body">
+					<!-- Table rows for defensemen will be dynamically added here -->
+				</tbody>
+		</table>
+		</div>
+		<h1 class="roster-positions">Goalies</h1>
+		<div style="overflow: auto;">
+		<table class="roster-names">
+				<thead class="top-table-header">
+					<tr>
+						<th>Player</th>
+						<th>#</th>
+						<th>Catches</th>
+						<th><abbr title="Games Played">GP</abbr></th>
+						<th><abbr title="Wins">W</abbr></th>
+						<th><abbr title="Losses">L</abbr></th>
+						<th><abbr title="Goals Against Average">GAA</abbr></th>
+						<th><abbr title="Shutouts">SO</abbr></th>
+					</tr>
+				</thead>
+				<tbody id="goalies-table-body">
+					<!-- Table rows for goalies will be dynamically added here -->
+				</tbody>
+		</table>
+		</div>
+	</section>
+	</section>
+</section>
+</div>
+
+<script>
+	fetch('../data.json')
+		.then(response => response.json())
+		.then(data => {
+			// Find the most recent season
+			const seasons = data.player.flatMap(player => Object.keys(player.seasons));
+			const validSeasons = seasons.filter(season => season !== 'undefined');
+			const latestSeason = validSeasons.reduce((a, b) => a > b ? a : b);
+			console.log('Latest Season:', latestSeason);
+
+			const forwards = data.player.filter(player => {
+			const playerSeasons = player.seasons;
+			return (
+				player.position === 'C' ||
+				player.position === 'LW' ||
+				player.position === 'RW'
+			) && latestSeason in playerSeasons && playerSeasons[latestSeason];
+			});
+			console.log('Forwards:', forwards);
+
+			const defensemen = data.player.filter(player => {
+			const playerSeasons = player.seasons;
+			return (
+				player.position === 'D'
+			) && latestSeason in playerSeasons && playerSeasons[latestSeason];
+			});
+			console.log('Defensemen:', defensemen);
+
+			const goalies = data.player.filter(player => {
+			const playerSeasons = player.seasons;
+			return (
+				player.position === 'G'
+			) && latestSeason in playerSeasons && playerSeasons[latestSeason];
+			});
+		
+		const forwardsTableBody = document.getElementById('forwards-table-body');
+		const defensemenTableBody = document.getElementById('defensemen-table-body');
+		const goaliesTableBody = document.getElementById('goalies-table-body');
+
+		// Get the window width
+		const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+		// Function to generate table rows
+		const generatePlayerRow = player => {
+			const playerRow = document.createElement('tr');
+
+			const seasonStats = player.seasons[latestSeason];
+			const gamesPlayed = seasonStats.GamesPlayed;
+			const points = seasonStats.Goals + seasonStats.Assists;
+
+			const playerName = `${player.firstName.charAt(0)}. ${player.lastName}`;
+
+		let playerStats = '';
+		let goalieStats = '';
+
+		if (player.position !== 'G') {
+			const goals = seasonStats.Goals;
+			const assists = seasonStats.Assists;
+			const penalties = seasonStats.Penalties;
+
+			playerStats = `
+			<td>${player.position}</td>
+			<td>${player.shoots.charAt(0)}</td>
+			<td>${gamesPlayed}</td>
+			<td>${goals}</td>
+			<td>${assists}</td>
+			<td>${points}</td>
+			<td>${penalties}</td>
+			`;
+		} else {
+			const wins = seasonStats.Wins;
+			const losses = seasonStats.Losses;
+			const goalsAgainst = seasonStats.GoalsAgainst;
+			const shutouts = seasonStats.Shutouts;
+			const goalsAgainstAverage = goalsAgainst / gamesPlayed;
+
+			goalieStats = `
+			<td>${player.shoots.charAt(0)}</td>
+			<td>${gamesPlayed}</td>
+			<td>${wins}</td>
+			<td>${losses}</td>
+			<td>${goalsAgainstAverage.toFixed(2)}</td>
+			<td>${shutouts}</td>
+			`;
+		}
+
+		playerRow.innerHTML = `
+			<td class="left-table-header"><a href="https://bellinghamavs.com/players/skater?id=${player.id}" class="name-hover">${playerName}</a></td>
+			<td>${player.number}</td>
+			${playerStats}
+			${goalieStats}
+		`;
+
+		return playerRow;
+		};
+		
+		// Sort players alphabetically by last name
+		forwards.sort((a, b) => a.lastName.localeCompare(b.lastName));
+		defensemen.sort((a, b) => a.lastName.localeCompare(b.lastName));
+		goalies.sort((a, b) => a.lastName.localeCompare(b.lastName));
+
+		// Generate table rows for forwards
+		forwards.forEach(player => {
+			const playerRow = generatePlayerRow(player);
+			forwardsTableBody.appendChild(playerRow);
+		});
+
+		// Generate table rows for defensemen
+		defensemen.forEach(player => {
+			const playerRow = generatePlayerRow(player);
+			defensemenTableBody.appendChild(playerRow);
+		});
+
+		// Generate table rows for goalies
+		goalies.forEach(player => {
+			const playerRow = generatePlayerRow(player);
+			goaliesTableBody.appendChild(playerRow);
+		});
+	})
+
+</script>
+
+</body>
+</html>

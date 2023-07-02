@@ -1,0 +1,300 @@
+{
+    "player": [
+        {
+            "id": "carter",
+            "firstName": "Carter",
+            "lastName": "Poynter",
+            "shoots": "Left",
+            "position": "C",
+            "number": 96,
+            "seasons":
+            {
+                "2018-19":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 19,
+                    "Goals": 16,
+                    "Assists": 12,
+                    "Penalties": 9
+                },
+                "2019-20":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 20,
+                    "Goals": 19,
+                    "Assists": 14,
+                    "Penalties": 9
+                },
+                "2020-21":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 14,
+                    "Goals": 5,
+                    "Assists": 13,
+                    "Penalties": 0
+                },
+                "2021-22":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 20,
+                    "Goals": 20,
+                    "Assists": 23,
+                    "Penalties": 3
+                },
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 19,
+                    "Goals": 13,
+                    "Assists": 19,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "chase",
+            "firstName": "Chase",
+            "lastName": "Noble",
+            "shoots": "Left",
+            "position": "RW",
+            "number": 27,
+            "seasons":
+            {
+                "2020-21":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 14,
+                    "Goals": 5,
+                    "Assists": 10,
+                    "Penalties": 12
+                },
+                "2021-22":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 18,
+                    "Goals": 13,
+                    "Assists": 17,
+                    "Penalties": 15
+                },
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 20,
+                    "Goals": 16,
+                    "Assists": 20,
+                    "Penalties": 15
+                }
+            }
+        },
+        {
+            "id": "brian",
+            "firstName": "Brian",
+            "lastName": "Poynter",
+            "shoots": "Left",
+            "position": "LW",
+            "number": 10,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 18,
+                    "Goals": 3,
+                    "Assists": 9,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "matt",
+            "firstName": "Matt",
+            "lastName": "Bode",
+            "shoots": "Right",
+            "position": "C",
+            "number": 88,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 11,
+                    "Goals": 10,
+                    "Assists": 9,
+                    "Penalties": 6
+                }
+            }
+        },
+        {
+            "id": "clover",
+            "firstName": "Alexie",
+            "lastName": "Clover",
+            "shoots": "Left",
+            "position": "LW",
+            "number": 6,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 17,
+                    "Goals": 9,
+                    "Assists": 10,
+                    "Penalties": 3
+                }
+            }
+        },
+        {
+            "id": "bob",
+            "firstName": "Bob",
+            "lastName": "Comley",
+            "shoots": "Right",
+            "position": "RW",
+            "number": 21,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 17,
+                    "Goals": 4,
+                    "Assists": 6,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "kevin",
+            "firstName": "Kevin",
+            "lastName": "Hernandez",
+            "shoots": "Left",
+            "position": "LW",
+            "number": 93,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 15,
+                    "Goals": 10,
+                    "Assists": 11,
+                    "Penalties": 9
+                }
+            }
+        },
+        {
+            "id": "patrick",
+            "firstName": "Patrick",
+            "lastName": "McHale",
+            "shoots": "Right",
+            "position": "RW",
+            "number": 11,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 17,
+                    "Goals": 31,
+                    "Assists": 20,
+                    "Penalties": 9
+                }
+            }
+        },
+        {
+            "id": "rick",
+            "firstName": "Rick",
+            "lastName": "Jeffries",
+            "shoots": "Left",
+            "position": "D",
+            "number": 55,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 17,
+                    "Goals": 4,
+                    "Assists": 12,
+                    "Penalties": 16
+                }
+            }
+        },
+        {
+            "id": "aleksey",
+            "firstName": "Aleksey",
+            "lastName": "Kashubin",
+            "shoots": "Right",
+            "position": "D",
+            "number": 14,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 16,
+                    "Goals": 9,
+                    "Assists": 13,
+                    "Penalties": 27
+                }
+            }
+        },
+        {
+            "id": "jake",
+            "firstName": "Jake",
+            "lastName": "Sikich",
+            "shoots": "Left",
+            "position": "D",
+            "number": 77,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 18,
+                    "Goals": 12,
+                    "Assists": 20,
+                    "Penalties": 12
+                }
+            }
+        },
+        {
+            "id": "ryan",
+            "firstName": "Ryan",
+            "lastName": "Wooten",
+            "shoots": "Right",
+            "position": "D",
+            "number": 2,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 13,
+                    "Goals": 2,
+                    "Assists": 8,
+                    "Penalties": 3
+                }
+            }
+        },
+        {
+            "id": "sean",
+            "firstName": "Sean",
+            "lastName": "Miller",
+            "shoots": "Left",
+            "position": "G",
+            "number": 30,
+            "seasons":
+            {
+                "2022-23":
+                {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 18,
+                    "Wins": 14,
+                    "Losses": 4,
+                    "Shutouts": 0,
+                    "GoalsAgainst": 81
+                }
+            }
+        }
+    ]
+}
