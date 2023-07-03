@@ -156,6 +156,8 @@ $(function(){
 			const penalties = seasonStats.Penalties;
 
 			playerStats = `
+			<td class="left-table-header"><a href="https://bellinghamavs.com/players/skater?id=${player.id}" class="name-hover">${playerName}</a></td>
+			<td>${player.number}</td>
 			<td>${player.position}</td>
 			<td>${player.shoots.charAt(0)}</td>
 			<td>${gamesPlayed}</td>
@@ -172,6 +174,8 @@ $(function(){
 			const goalsAgainstAverage = goalsAgainst / gamesPlayed;
 
 			goalieStats = `
+			<td class="left-table-header"><a href="https://bellinghamavs.com/players/goalie?id=${player.id}" class="name-hover">${playerName}</a></td>
+			<td>${player.number}</td>
 			<td>${player.shoots.charAt(0)}</td>
 			<td>${gamesPlayed}</td>
 			<td>${wins}</td>
@@ -182,8 +186,6 @@ $(function(){
 		}
 
 		playerRow.innerHTML = `
-			<td class="left-table-header"><a href="https://bellinghamavs.com/players/skater?id=${player.id}" class="name-hover">${playerName}</a></td>
-			<td>${player.number}</td>
 			${playerStats}
 			${goalieStats}
 		`;
