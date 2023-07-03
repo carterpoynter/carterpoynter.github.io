@@ -130,6 +130,17 @@ $(function(){
 							</div>
 						</div>
 						`;
+					} else if (statistic === 'Penalties') {
+						playerCard.innerHTML = `
+						<div class="leaderboard_player">
+							<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/skater?id=${player.id}"><img src="./images/profiles/${player.id}_profile.png"></a></div>
+							<div class="leaderboard_entries_info">
+								<h1><a href="https://bellinghamavs.com/players/skater?id=${player.id}">${player.firstName} ${player.lastName}</a></h1>
+								<p>#${player.number} - ${player.position}</p>
+								<div class="leaderboard_entries_points"><h1>${player.seasons[latestSeason][statistic]}</h1><p>PENALTY MINUTES</p></div>
+							</div>
+						</div>
+						`;
 					} else {
 						playerCard.innerHTML = `
 						<div class="leaderboard_player">
