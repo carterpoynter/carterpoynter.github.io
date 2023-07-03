@@ -137,6 +137,8 @@ tr.stats-row:hover:not(.active) {
 	color: white;
 	font-weight: 700;
 	margin: 0;
+	line-height: 1;
+	font-style: italic;
 }
 
 section.attributes {
@@ -145,6 +147,7 @@ section.attributes {
 	font-size: 30px;
 	color: white;
 	font-weight: 600;
+	font-style: italic;
 }
 
 .name-number {
@@ -266,7 +269,7 @@ td {
 }
 
 .career-row td {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .bold-table-season {
