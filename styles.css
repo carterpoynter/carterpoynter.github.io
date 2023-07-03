@@ -141,7 +141,7 @@ tr.stats-row:hover:not(.active) {
 
 section.attributes {
 	text-align: center;
-	font-family: 'Titillium Web';
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 30px;
 	color: white;
 	font-weight: 600;
@@ -505,7 +505,7 @@ table {
 	background-position: center;
 	color: white;
 	height: auto;
-	font-family: 'Titillium', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 72px;
 	font-weight: 700;
 	font-style: italic;
@@ -546,7 +546,7 @@ table {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/gallery_photos/team2.jpg");
 	color: white;
 	height: auto;
-	font-family: 'Titillium', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 72px;
 	text-align: center;
 	padding: 30px;
