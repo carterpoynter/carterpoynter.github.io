@@ -9,6 +9,7 @@
 	<link rel="icon" type="image/x-icon" href="./images/bellingham_avalanche_icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="countdown.js"></script>
 </head>
 
 <!--Navigation bar-->
@@ -29,6 +30,14 @@ $(function(){
 			<section class="main-container">
 				<section class="homepage-container">
 					<div class="left-home">
+						<div class="left-subcontainer">
+							<div class="roster-button">
+								<h1 style="margin: 10px">NEXT GAME:</h1>
+								<div id="event-info" style="font-size: 48px;">
+									<!-- Event items will be dynamically added here -->
+								</div>
+							</div>
+						</div>
 						<div class="left-subcontainer">
 							<a class="roster-link" href="https://bellinghamavs.com/rosters/rosterCurrent">
 								<div class="roster-button">
