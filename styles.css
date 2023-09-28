@@ -538,6 +538,7 @@ table {
 }
 .countdown-text {
 	line-height: 1.2;
+	font-size: 48px;
 }
 /*COUNTDOWN (TEMPORARY?) ^^^^^^^^*/
 
@@ -681,5 +682,9 @@ table {
 		margin-top: 5px;
 		margin-bottom: 5px;
 		font-size: 35px;
+	}
+	.countdown-text {
+		line-height: 1.2;
+		font-size: 32px;
 	}
 }
