@@ -1,6 +1,12 @@
 const events = [
     { name: "vs. Rangers", date: new Date("2023-10-03T20:45:00").getTime() },
     { name: "vs. Kraken Beers", date: new Date("2023-10-11T22:15:00").getTime() },
+    { name: "vs. Green Hornets", date: new Date("2023-10-18T22:15:00").getTime() },
+    { name: "vs. Spartans", date: new Date("2023-10-24T20:45:00").getTime() },
+    { name: "vs. Spartans", date: new Date("2023-10-31T20:45:00").getTime() },
+    { name: "vs. Rangers", date: new Date("2023-11-08T22:15:00").getTime() },
+    { name: "vs. Kraken Beers", date: new Date("2023-11-14T20:45:00").getTime() },
+    { name: "vs. Green Hornets", date: new Date("2023-11-21T20:45:00").getTime() },
     // Add more events as needed
 ];
 

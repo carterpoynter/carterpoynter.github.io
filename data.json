@@ -54,7 +54,7 @@
                     "Team": "Avalanche",
                     "GamesPlayed": 1,
                     "Goals": 0,
-                    "Assists": 1,
+                    "Assists": 2,
                     "Penalties": 0
                 }
             }
@@ -224,7 +224,7 @@
                     "Team": "Avalanche",
                     "GamesPlayed": 1,
                     "Goals": 0,
-                    "Assists": 0,
+                    "Assists": 1,
                     "Penalties": 3
                 }
             }
@@ -359,7 +359,7 @@
                     "Team": "Avalanche",
                     "GamesPlayed": 1,
                     "Goals": 1,
-                    "Assists": 0,
+                    "Assists": 2,
                     "Penalties": 0
                 }
             }
