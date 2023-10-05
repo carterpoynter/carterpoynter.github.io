@@ -96,7 +96,7 @@
                 {
                     "Team": "Avalanche",
                     "GamesPlayed": 1,
-                    "Goals": 1,
+                    "Goals": 2,
                     "Assists": 2,
                     "Penalties": 0
                 }
@@ -234,7 +234,7 @@
             "firstName": "Patrick",
             "lastName": "McHale",
             "shoots": "Right",
-            "position": "RW",
+            "position": "D",
             "number": 11,
             "seasons":
             {
@@ -250,8 +250,8 @@
                 {
                     "Team": "Avalanche",
                     "GamesPlayed": 1,
-                    "Goals": 2,
-                    "Assists": 0,
+                    "Goals": 1,
+                    "Assists": 1,
                     "Penalties": 0
                 }
             }
@@ -315,7 +315,7 @@
             "firstName": "Jake",
             "lastName": "Sikich",
             "shoots": "Left",
-            "position": "D",
+            "position": "LW",
             "number": 77,
             "seasons":
             {
@@ -342,7 +342,7 @@
             "firstName": "Ryan",
             "lastName": "Wooten",
             "shoots": "Right",
-            "position": "D",
+            "position": "RW",
             "number": 2,
             "seasons":
             {
@@ -369,7 +369,7 @@
             "firstName": "Michael",
             "lastName": "Apitz",
             "shoots": "Left",
-            "position": "LW",
+            "position": "D",
             "number": 72,
             "seasons":
             {
@@ -389,7 +389,7 @@
             "lastName": "Shintar",
             "shoots": "Right",
             "position": "D",
-            "number": 0,
+            "number": 4,
             "seasons":
             {
                 "2023-24":
@@ -397,7 +397,7 @@
                     "Team": "Avalanche",
                     "GamesPlayed": 1,
                     "Goals": 0,
-                    "Assists": 0,
+                    "Assists": 1,
                     "Penalties": 0
                 }
             }
