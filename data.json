@@ -45,9 +45,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 2,
+                    "GamesPlayed": 3,
                     "Goals": 1,
-                    "Assists": 3,
+                    "Assists": 4,
                     "Penalties": 0
                 }
             }
@@ -83,9 +83,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 2,
-                    "Goals": 3,
-                    "Assists": 2,
+                    "GamesPlayed": 3,
+                    "Goals": 4,
+                    "Assists": 4,
                     "Penalties": 0
                 }
             }
@@ -107,7 +107,7 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 1,
+                    "GamesPlayed": 2,
                     "Goals": 0,
                     "Assists": 2,
                     "Penalties": 0
@@ -131,9 +131,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 2,
-                    "Goals": 3,
-                    "Assists": 1,
+                    "GamesPlayed": 3,
+                    "Goals": 6,
+                    "Assists": 2,
                     "Penalties": 0
                 }
             }
@@ -172,9 +172,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 2,
+                    "GamesPlayed": 3,
                     "Goals": 0,
-                    "Assists": 0,
+                    "Assists": 1,
                     "Penalties": 0
                 }
             }
@@ -196,9 +196,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 2,
+                    "GamesPlayed": 3,
                     "Goals": 3,
-                    "Assists": 1,
+                    "Assists": 2,
                     "Penalties": 3
                 }
             }
@@ -220,9 +220,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 2,
-                    "Goals": 2,
-                    "Assists": 2,
+                    "GamesPlayed": 3,
+                    "Goals": 6,
+                    "Assists": 3,
                     "Penalties": 0
                 }
             }
@@ -244,9 +244,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 1,
+                    "GamesPlayed": 2,
                     "Goals": 0,
-                    "Assists": 0,
+                    "Assists": 1,
                     "Penalties": 3
                 }
             }
@@ -316,7 +316,7 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 2,
+                    "GamesPlayed": 3,
                     "Goals": 1,
                     "Assists": 2,
                     "Penalties": 0
@@ -333,9 +333,9 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 2,
+                    "GamesPlayed": 3,
                     "Goals": 1,
-                    "Assists": 1,
+                    "Assists": 3,
                     "Penalties": 0
                 }
             }
@@ -350,9 +350,9 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 2,
+                    "GamesPlayed": 3,
                     "Goals": 0,
-                    "Assists": 4,
+                    "Assists": 5,
                     "Penalties": 3
                 }
             }
@@ -385,11 +385,11 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 2,
-                    "Wins": 1,
+                    "GamesPlayed": 3,
+                    "Wins": 3,
                     "Losses": 0,
                     "Shutouts": 0,
-                    "GoalsAgainst": 8
+                    "GoalsAgainst": 14
                 }
             }
         }
