@@ -45,7 +45,7 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
+                    "GamesPlayed": 7,
                     "Goals": 2,
                     "Assists": 8,
                     "Penalties": 0
@@ -83,8 +83,8 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
-                    "Goals": 10,
+                    "GamesPlayed": 7,
+                    "Goals": 12,
                     "Assists": 7,
                     "Penalties": 0
                 }
@@ -107,7 +107,7 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 3,
+                    "GamesPlayed": 4,
                     "Goals": 0,
                     "Assists": 3,
                     "Penalties": 0
@@ -172,9 +172,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
+                    "GamesPlayed": 7,
                     "Goals": 1,
-                    "Assists": 2,
+                    "Assists": 3,
                     "Penalties": 3
                 }
             }
@@ -196,9 +196,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
+                    "GamesPlayed": 7,
                     "Goals": 5,
-                    "Assists": 4,
+                    "Assists": 5,
                     "Penalties": 3
                 }
             }
@@ -220,9 +220,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
-                    "Goals": 12,
-                    "Assists": 6,
+                    "GamesPlayed": 7,
+                    "Goals": 13,
+                    "Assists": 7,
                     "Penalties": 0
                 }
             }
@@ -244,7 +244,7 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 5,
+                    "GamesPlayed": 6,
                     "Goals": 1,
                     "Assists": 3,
                     "Penalties": 3
@@ -316,8 +316,8 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 5,
-                    "Goals": 2,
+                    "GamesPlayed": 6,
+                    "Goals": 4,
                     "Assists": 6,
                     "Penalties": 0
                 }
@@ -333,8 +333,8 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
-                    "Goals": 1,
+                    "GamesPlayed": 7,
+                    "Goals": 2,
                     "Assists": 4,
                     "Penalties": 0
                 }
@@ -350,7 +350,7 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
+                    "GamesPlayed": 7,
                     "Goals": 0,
                     "Assists": 8,
                     "Penalties": 3
@@ -385,11 +385,11 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
-                    "Wins": 5,
+                    "GamesPlayed": 7,
+                    "Wins": 6,
                     "Losses": 1,
                     "Shutouts": 0,
-                    "GoalsAgainst": 30
+                    "GoalsAgainst": 35
                 }
             }
         }
