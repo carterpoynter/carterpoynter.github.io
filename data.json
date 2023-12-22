@@ -358,6 +358,57 @@
             }
         },
         {
+            "id": "conor",
+            "firstName": "Conor",
+            "lastName": "Keilty",
+            "shoots": "Left",
+            "position": "LW",
+            "number": "13",
+            "seasons": {
+                "2023-24": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 8,
+                    "Goals": 5,
+                    "Assists": 4,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "thomas",
+            "firstName": "Thomas",
+            "lastName": "Lorimor",
+            "shoots": "Right",
+            "position": "RW",
+            "number": "-",
+            "seasons": {
+                "2023-24": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 6,
+                    "Goals": 3,
+                    "Assists": 9,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "brendan",
+            "firstName": "Brendan",
+            "lastName": "Wright",
+            "shoots": "Left",
+            "position": "C",
+            "number": "-",
+            "seasons": {
+                "2023-24": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 6,
+                    "Goals": 5,
+                    "Assists": 12,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
             "id": "sean",
             "firstName": "Sean",
             "lastName": "Miller",
