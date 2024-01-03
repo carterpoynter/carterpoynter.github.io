@@ -45,8 +45,8 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 12,
-                    "Goals": 4,
+                    "GamesPlayed": 13,
+                    "Goals": 6,
                     "Assists": 10,
                     "Penalties": 0
                 }
@@ -83,8 +83,8 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 12,
-                    "Goals": 17,
+                    "GamesPlayed": 13,
+                    "Goals": 18,
                     "Assists": 9,
                     "Penalties": 0
                 }
@@ -107,9 +107,9 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 7,
+                    "GamesPlayed": 8,
                     "Goals": 1,
-                    "Assists": 4,
+                    "Assists": 6,
                     "Penalties": 0
                 }
             }
@@ -196,7 +196,7 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 12,
+                    "GamesPlayed": 13,
                     "Goals": 6,
                     "Assists": 5,
                     "Penalties": 6
@@ -244,10 +244,10 @@
                 },
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 10,
+                    "GamesPlayed": 11,
                     "Goals": 1,
                     "Assists": 4,
-                    "Penalties": 3
+                    "Penalties": 6
                 }
             }
         },
@@ -280,7 +280,7 @@
             "firstName": "Jake",
             "lastName": "Sikich",
             "shoots": "Left",
-            "position": "LW",
+            "position": "D",
             "number": 77,
             "seasons": {
                 "2022-23": {
@@ -333,9 +333,9 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 12,
+                    "GamesPlayed": 13,
                     "Goals": 2,
-                    "Assists": 7,
+                    "Assists": 8,
                     "Penalties": 3
                 }
             }
@@ -350,9 +350,9 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 11,
+                    "GamesPlayed": 12,
                     "Goals": 0,
-                    "Assists": 9,
+                    "Assists": 11,
                     "Penalties": 6
                 }
             }
@@ -384,7 +384,7 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
+                    "GamesPlayed": 7,
                     "Goals": 3,
                     "Assists": 9,
                     "Penalties": 0
@@ -401,9 +401,26 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
+                    "GamesPlayed": 7,
                     "Goals": 5,
                     "Assists": 12,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "brady",
+            "firstName": "Brady",
+            "lastName": "Jeffries",
+            "shoots": "Right",
+            "position": "RW",
+            "number": "8",
+            "seasons": {
+                "2023-24": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 1,
+                    "Goals": 0,
+                    "Assists": 0,
                     "Penalties": 0
                 }
             }
@@ -436,11 +453,11 @@
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 12,
-                    "Wins": 6,
+                    "GamesPlayed": 13,
+                    "Wins": 7,
                     "Losses": 6,
                     "Shutouts": 0,
-                    "GoalsAgainst": 65
+                    "GoalsAgainst": 67
                 }
             }
         }
