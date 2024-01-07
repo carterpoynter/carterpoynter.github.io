@@ -113,15 +113,16 @@ const table = document.querySelector('.full-tables');
 	fetch('../data.json')
 		.then(response => response.json())
 		.then(data => {
-			const seasons = data.player.flatMap(player => Object.keys(player.seasons));
-			const validSeasons = seasons.filter(season => season !== 'undefined');
-			const currentSeason = validSeasons.reduce((a, b) => a > b ? a : b);
-
 			const player = data.player.find(p => p.id === playerId);
 			if (!player) {
 				throw new Error('Invalid player ID: ' + playerId);
 			}
 
+			// Determine the most recent season for the selected player
+			const seasons = Object.keys(player.seasons);
+			const currentSeason = seasons.reduce((a, b) => a > b ? a : b);
+
+			// Display player details
 			const playerImage = document.querySelector('.Headshot');
 			playerImage.src = `../images/profiles/${playerId}_profile.png`;
 

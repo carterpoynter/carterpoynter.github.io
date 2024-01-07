@@ -113,15 +113,17 @@ const table = document.querySelector('.full-tables');
 	fetch('../data.json')
 		.then(response => response.json())
 		.then(data => {
-			const seasons = data.player.flatMap(player => Object.keys(player.seasons));
-			const validSeasons = seasons.filter(season => season !== 'undefined');
-			const currentSeason = validSeasons.reduce((a, b) => a > b ? a : b);
-
+			
 			const player = data.player.find(p => p.id === playerId);
 			if (!player) {
 				throw new Error('Invalid player ID: ' + playerId);
 			}
 
+			// Determine the most recent season for the selected player
+			const seasons = Object.keys(player.seasons);
+			const mostRecentSeason = seasons.reduce((a, b) => a > b ? a : b);
+
+			// Display player details
 			const playerImage = document.querySelector('.Headshot');
 			playerImage.src = `../images/profiles/${playerId}_profile.png`;
 
@@ -169,17 +171,18 @@ const table = document.querySelector('.full-tables');
 				row.cells[0].classList.add('bold-table-season');
 			}
 
+			// Display the most recent season's data
 			const currentSeasonStatsTableBody = document.getElementById('current-season-stats-body');
-			const currentSeasonData = player.seasons[currentSeason];
-			const currentSeasonRow = currentSeasonStatsTableBody.insertRow();
-			currentSeasonRow.insertCell().textContent = currentSeason;
-			currentSeasonRow.insertCell().textContent = currentSeasonData.GamesPlayed;
-			currentSeasonRow.insertCell().textContent = currentSeasonData.Goals;
-			currentSeasonRow.insertCell().textContent = currentSeasonData.Assists;
-			const currentSeasonPoints = currentSeasonData.Goals + currentSeasonData.Assists;
-			currentSeasonRow.insertCell().textContent = currentSeasonPoints;
-			currentSeasonRow.insertCell().textContent = currentSeasonData.Penalties;
-			currentSeasonRow.cells[0].classList.add('bold-table-season');
+			const mostRecentSeasonData = player.seasons[mostRecentSeason];
+			const mostRecentSeasonRow = currentSeasonStatsTableBody.insertRow();
+			mostRecentSeasonRow.insertCell().textContent = mostRecentSeason;
+			mostRecentSeasonRow.insertCell().textContent = mostRecentSeasonData.GamesPlayed;
+			mostRecentSeasonRow.insertCell().textContent = mostRecentSeasonData.Goals;
+			mostRecentSeasonRow.insertCell().textContent = mostRecentSeasonData.Assists;
+			const mostRecentSeasonPoints = mostRecentSeasonData.Goals + mostRecentSeasonData.Assists;
+			mostRecentSeasonRow.insertCell().textContent = mostRecentSeasonPoints;
+			mostRecentSeasonRow.insertCell().textContent = mostRecentSeasonData.Penalties;
+			mostRecentSeasonRow.cells[0].classList.add('bold-table-season');
 
 			
 			const careerRows = document.querySelectorAll('.career-row');
