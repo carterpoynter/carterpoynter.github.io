@@ -1,4 +1,4 @@
-const events = [,
+const events = [
     { name: "vs. Trash Pandas", date: new Date("2024-02-07T22:15:00").getTime() },
     { name: "vs. Spartans", date: new Date("2024-02-13T20:45:00").getTime() },
     { name: "vs. Kraken Beers", date: new Date("2024-02-20T20:45:00").getTime() },
