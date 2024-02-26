@@ -1,4 +1,5 @@
 const events = [
+    { name: "Playoff Game 1", date: new Date("2024-02-28T20:45:00").getTime() },
     // Add more events as needed
 ];
 
