@@ -105,141 +105,129 @@ $(function(){
 
 <script>
 	fetch('../data.json')
-  .then(response => response.json())
-  .then(data => {
-    const dropdown = document.getElementById('seasonDropdown');
-    const forwardsTableBody = document.getElementById('forwards-table-body');
-    const defensemenTableBody = document.getElementById('defensemen-table-body');
-    const goaliesTableBody = document.getElementById('goalies-table-body');
+		.then(response => response.json())
+		.then(data => {
+			const dropdown = document.getElementById('seasonDropdown');
 
-    // Function to generate table rows
-    const generatePlayerRow = player => {
-      const playerRow = document.createElement('tr');
+			// Event listener for dropdown change
+			dropdown.addEventListener('change', function () {
+			const selectedSeason = this.value;
 
-      const seasonStats = player.seasons[selectedSeason];
-      const gamesPlayed = seasonStats.GamesPlayed;
-      const points = seasonStats.Goals + seasonStats.Assists;
+			const forwards = data.player.filter(player => {
+			const playerSeasons = player.seasons;
+			return (
+				player.position === 'C' ||
+				player.position === 'LW' ||
+				player.position === 'RW'
+			) && selectedSeason in playerSeasons && playerSeasons[selectedSeason];
+			});
+			console.log('Forwards:', forwards);
 
-      const playerName = `${player.firstName.charAt(0)}. ${player.lastName}`;
+			const defensemen = data.player.filter(player => {
+			const playerSeasons = player.seasons;
+			return (
+				player.position === 'D'
+			) && selectedSeason in playerSeasons && playerSeasons[selectedSeason];
+			});
+			console.log('Defensemen:', defensemen);
 
-      let playerStats = '';
-      let goalieStats = '';
+			const goalies = data.player.filter(player => {
+			const playerSeasons = player.seasons;
+			return (
+				player.position === 'G'
+			) && selectedSeason in playerSeasons && playerSeasons[selectedSeason];
+			});
+		
+		const forwardsTableBody = document.getElementById('forwards-table-body');
+		const defensemenTableBody = document.getElementById('defensemen-table-body');
+		const goaliesTableBody = document.getElementById('goalies-table-body');
 
-      if (player.position !== 'G') {
-        const goals = seasonStats.Goals;
-        const assists = seasonStats.Assists;
-        const penalties = seasonStats.Penalties;
+		// Get the window width
+		const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-        playerStats = `
-          <td class="left-table-header"><a href="https://bellinghamavs.com/players/skater?id=${player.id}" class="name-hover">${playerName}</a></td>
-          <td>${player.number}</td>
-          <td>${player.position}</td>
-          <td>${player.shoots.charAt(0)}</td>
-          <td>${gamesPlayed}</td>
-          <td>${goals}</td>
-          <td>${assists}</td>
-          <td>${points}</td>
-          <td>${penalties}</td>
-        `;
-      } else {
-        const wins = seasonStats.Wins;
-        const losses = seasonStats.Losses;
-        const goalsAgainst = seasonStats.GoalsAgainst;
-        const shutouts = seasonStats.Shutouts;
-        const goalsAgainstAverage = goalsAgainst / gamesPlayed;
+		// Function to generate table rows
+		const generatePlayerRow = player => {
+			const playerRow = document.createElement('tr');
 
-        goalieStats = `
-          <td class="left-table-header"><a href="https://bellinghamavs.com/players/goalie?id=${player.id}" class="name-hover">${playerName}</a></td>
-          <td>${player.number}</td>
-          <td>${player.shoots.charAt(0)}</td>
-          <td>${gamesPlayed}</td>
-          <td>${wins}</td>
-          <td>${losses}</td>
-          <td>${goalsAgainstAverage.toFixed(2)}</td>
-          <td>${shutouts}</td>
-        `;
-      }
+			const seasonStats = player.seasons[selectedSeason];
+			const gamesPlayed = seasonStats.GamesPlayed;
+			const points = seasonStats.Goals + seasonStats.Assists;
 
-      playerRow.innerHTML = `
-        ${playerStats}
-        ${goalieStats}
-      `;
+			const playerName = `${player.firstName.charAt(0)}. ${player.lastName}`;
 
-      return playerRow;
-    };
+		let playerStats = '';
+		let goalieStats = '';
 
-    // Function to populate the roster based on the selected season
-    const populateRoster = (forwards, defensemen, goalies, selectedSeason) => {
-      // Clear existing table rows
-      forwardsTableBody.innerHTML = '';
-      defensemenTableBody.innerHTML = '';
-      goaliesTableBody.innerHTML = '';
+		if (player.position !== 'G') {
+			const goals = seasonStats.Goals;
+			const assists = seasonStats.Assists;
+			const penalties = seasonStats.Penalties;
 
-      // Sort players alphabetically by last name
-      forwards.sort((a, b) => a.lastName.localeCompare(b.lastName));
-      defensemen.sort((a, b) => a.lastName.localeCompare(b.lastName));
-      goalies.sort((a, b) => a.lastName.localeCompare(b.lastName));
+			playerStats = `
+			<td class="left-table-header"><a href="https://bellinghamavs.com/players/skater?id=${player.id}" class="name-hover">${playerName}</a></td>
+			<td>${player.number}</td>
+			<td>${player.position}</td>
+			<td>${player.shoots.charAt(0)}</td>
+			<td>${gamesPlayed}</td>
+			<td>${goals}</td>
+			<td>${assists}</td>
+			<td>${points}</td>
+			<td>${penalties}</td>
+			`;
+		} else {
+			const wins = seasonStats.Wins;
+			const losses = seasonStats.Losses;
+			const goalsAgainst = seasonStats.GoalsAgainst;
+			const shutouts = seasonStats.Shutouts;
+			const goalsAgainstAverage = goalsAgainst / gamesPlayed;
 
-      // Generate table rows for forwards
-      forwards.forEach(player => {
-        const playerRow = generatePlayerRow(player);
-        forwardsTableBody.appendChild(playerRow);
-      });
+			goalieStats = `
+			<td class="left-table-header"><a href="https://bellinghamavs.com/players/goalie?id=${player.id}" class="name-hover">${playerName}</a></td>
+			<td>${player.number}</td>
+			<td>${player.shoots.charAt(0)}</td>
+			<td>${gamesPlayed}</td>
+			<td>${wins}</td>
+			<td>${losses}</td>
+			<td>${goalsAgainstAverage.toFixed(2)}</td>
+			<td>${shutouts}</td>
+			`;
+		}
 
-      // Generate table rows for defensemen
-      defensemen.forEach(player => {
-        const playerRow = generatePlayerRow(player);
-        defensemenTableBody.appendChild(playerRow);
-      });
+		playerRow.innerHTML = `
+			${playerStats}
+			${goalieStats}
+		`;
 
-      // Generate table rows for goalies
-      goalies.forEach(player => {
-        const playerRow = generatePlayerRow(player);
-        goaliesTableBody.appendChild(playerRow);
-      });
-    };
+		return playerRow;
+		};
+		
+		// Sort players alphabetically by last name
+		forwards.sort((a, b) => a.lastName.localeCompare(b.lastName));
+		defensemen.sort((a, b) => a.lastName.localeCompare(b.lastName));
+		goalies.sort((a, b) => a.lastName.localeCompare(b.lastName));
 
-    // Event listener for dropdown change and initial page load
-    const handleDropdownChange = function () {
-      const selectedSeason = this.value;
+		// Generate table rows for forwards
+		forwards.forEach(player => {
+			const playerRow = generatePlayerRow(player);
+			forwardsTableBody.appendChild(playerRow);
+		});
 
-      const forwards = data.player.filter(player => {
-        const playerSeasons = player.seasons;
-        return (
-          player.position === 'C' ||
-          player.position === 'LW' ||
-          player.position === 'RW'
-        ) && selectedSeason in playerSeasons && playerSeasons[selectedSeason];
-      });
+		// Generate table rows for defensemen
+		defensemen.forEach(player => {
+			const playerRow = generatePlayerRow(player);
+			defensemenTableBody.appendChild(playerRow);
+		});
 
-      const defensemen = data.player.filter(player => {
-        const playerSeasons = player.seasons;
-        return (
-          player.position === 'D'
-        ) && selectedSeason in playerSeasons && playerSeasons[selectedSeason];
-      });
-
-      const goalies = data.player.filter(player => {
-        const playerSeasons = player.seasons;
-        return (
-          player.position === 'G'
-        ) && selectedSeason in playerSeasons && playerSeasons[selectedSeason];
-      });
-
-      // Populate the roster based on the selected season
-      populateRoster(forwards, defensemen, goalies, selectedSeason);
-    };
-
-    // Add event listener for dropdown change
-    dropdown.addEventListener('change', handleDropdownChange);
-
-    // Trigger initial population of the roster based on the default selected season
-    handleDropdownChange.call(dropdown);
+		// Generate table rows for goalies
+		goalies.forEach(player => {
+			const playerRow = generatePlayerRow(player);
+			goaliesTableBody.appendChild(playerRow);
+		});
+    });
   })
   .catch(error => {
     console.error('Error fetching data:', error);
   });
-
 </script>
 
 </body>
