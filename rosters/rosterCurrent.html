@@ -127,7 +127,7 @@ $(function(){
 			const playerSeasons = player.seasons;
 			return (
 				player.position === 'D'
-			) && electedSeason in playerSeasons && playerSeasons[selectedSeason];
+			) && selectedSeason in playerSeasons && playerSeasons[selectedSeason];
 			});
 			console.log('Defensemen:', defensemen);
 
@@ -135,7 +135,7 @@ $(function(){
 			const playerSeasons = player.seasons;
 			return (
 				player.position === 'G'
-			) && electedSeason in playerSeasons && playerSeasons[selectedSeason];
+			) && selectedSeason in playerSeasons && playerSeasons[selectedSeason];
 			});
 		
 		const forwardsTableBody = document.getElementById('forwards-table-body');
