@@ -119,7 +119,7 @@ $(function(){
 				player.position === 'C' ||
 				player.position === 'LW' ||
 				player.position === 'RW'
-			) && latestSeason in playerSeasons && playerSeasons[selectedSeason];
+			) && selectedSeason in playerSeasons && playerSeasons[selectedSeason];
 			});
 			console.log('Forwards:', forwards);
 
@@ -127,7 +127,7 @@ $(function(){
 			const playerSeasons = player.seasons;
 			return (
 				player.position === 'D'
-			) && latestSeason in playerSeasons && playerSeasons[selectedSeason];
+			) && electedSeason in playerSeasons && playerSeasons[selectedSeason];
 			});
 			console.log('Defensemen:', defensemen);
 
@@ -135,7 +135,7 @@ $(function(){
 			const playerSeasons = player.seasons;
 			return (
 				player.position === 'G'
-			) && latestSeason in playerSeasons && playerSeasons[selectedSeason];
+			) && electedSeason in playerSeasons && playerSeasons[selectedSeason];
 			});
 		
 		const forwardsTableBody = document.getElementById('forwards-table-body');
@@ -149,7 +149,7 @@ $(function(){
 		const generatePlayerRow = player => {
 			const playerRow = document.createElement('tr');
 
-			const seasonStats = player.seasons[latestSeason];
+			const seasonStats = player.seasons[selectedSeason];
 			const gamesPlayed = seasonStats.GamesPlayed;
 			const points = seasonStats.Goals + seasonStats.Assists;
 
