@@ -27,7 +27,15 @@ $(function(){
 <section class="contents">
 	<section class="main-container">
 	<section class="nonplayer-container">
-		<h1 class="stats-heading">2022-23 ROSTER</h1>
+		<div class="roster-title-dropdown">
+			<h1 class="stats-heading">ROSTER</h1>
+			<div class="roster-dropdown" style="display: flex; justify-content: center;">
+				<select name="Season" style="font-size: 24px; font-family: 'Titillium Web', sans-serif; font-weight: 600;">
+					<option style="font-size: 24px; font-family: 'Titillium Web', sans-serif; font-weight: 600;" value="rosterCurrent.html">2023-24</option>
+					<option style="font-size: 24px; font-family: 'Titillium Web', sans-serif; font-weight: 600;" value="roster2022-23.html" selected>2022-23</option>
+				</select>
+			</div>
+		</div>
 		<h1 class="roster-positions">Forwards</h1>
 		<div style="overflow: auto;">
 		<table class="roster-names">
@@ -233,6 +241,15 @@ $(function(){
 	</section>
 </section>
 </div>
+
+<script>
+	var select = document.querySelector('select');
+
+select.addEventListener('change', function() {
+	var url = this.value;
+	window.location.href = url;
+});
+</script>
 
 </body>
 </html>

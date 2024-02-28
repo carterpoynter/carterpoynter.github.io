@@ -27,7 +27,15 @@ $(function(){
 <section class="contents">
 	<section class="main-container">
 	<section class="nonplayer-container">
-		<h1 class="stats-heading">ROSTER</h1>
+		<div class="roster-title-dropdown">
+			<h1 class="stats-heading">ROSTER</h1>
+			<div class="roster-dropdown" style="display: flex; justify-content: center;">
+				<select name="Season" style="font-size: 24px; font-family: 'Titillium Web', sans-serif; font-weight: 600;">
+					<option style="font-size: 24px; font-family: 'Titillium Web', sans-serif; font-weight: 600;" value="2023-24" selected>2023-24</option>
+					<option style="font-size: 24px; font-family: 'Titillium Web', sans-serif; font-weight: 600;" value="2022-23">2022-23</option>
+				</select>
+			</div>
+		</div>
 		<h1 class="roster-positions">Forwards</h1>
 		<div style="overflow: auto;">
 		<table class="roster-names">
@@ -99,11 +107,11 @@ $(function(){
 	fetch('../data.json')
 		.then(response => response.json())
 		.then(data => {
-			// Find the most recent season
-			const seasons = data.player.flatMap(player => Object.keys(player.seasons));
-			const validSeasons = seasons.filter(season => season !== 'undefined');
-			const latestSeason = validSeasons.reduce((a, b) => a > b ? a : b);
-			console.log('Latest Season:', latestSeason);
+			const dropdown = document.getElementById('seasonDropdown');
+
+			// Event listener for dropdown change
+			dropdown.addEventListener('change', function () {
+			const selectedSeason = this.value;
 
 			const forwards = data.player.filter(player => {
 			const playerSeasons = player.seasons;
@@ -111,7 +119,7 @@ $(function(){
 				player.position === 'C' ||
 				player.position === 'LW' ||
 				player.position === 'RW'
-			) && latestSeason in playerSeasons && playerSeasons[latestSeason];
+			) && latestSeason in playerSeasons && playerSeasons[selectedSeason];
 			});
 			console.log('Forwards:', forwards);
 
@@ -119,7 +127,7 @@ $(function(){
 			const playerSeasons = player.seasons;
 			return (
 				player.position === 'D'
-			) && latestSeason in playerSeasons && playerSeasons[latestSeason];
+			) && latestSeason in playerSeasons && playerSeasons[selectedSeason];
 			});
 			console.log('Defensemen:', defensemen);
 
@@ -127,7 +135,7 @@ $(function(){
 			const playerSeasons = player.seasons;
 			return (
 				player.position === 'G'
-			) && latestSeason in playerSeasons && playerSeasons[latestSeason];
+			) && latestSeason in playerSeasons && playerSeasons[selectedSeason];
 			});
 		
 		const forwardsTableBody = document.getElementById('forwards-table-body');
@@ -215,8 +223,11 @@ $(function(){
 			const playerRow = generatePlayerRow(player);
 			goaliesTableBody.appendChild(playerRow);
 		});
-	})
-
+    });
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
 </script>
 
 </body>
