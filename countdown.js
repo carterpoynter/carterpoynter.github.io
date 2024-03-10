@@ -4,6 +4,7 @@ const events = [
 ];
 
 let currentIndex = 0;
+let countdownInterval;
 
 function formatTime(date) {
     const options = {
@@ -26,6 +27,7 @@ function updateCountdown() {
             currentEvent = events[currentIndex];
         } else {
             document.getElementById("event-info").innerHTML = "No upcoming games";
+            clearInterval(countdownInterval); // Clear the interval
             return;
         }
     }
@@ -48,5 +50,5 @@ function updateCountdown() {
     document.getElementById("event-info").innerHTML = eventInfo;
 }
 
-setInterval(updateCountdown, 1000);
+countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
