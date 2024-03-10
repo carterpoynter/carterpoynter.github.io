@@ -539,7 +539,7 @@ table {
 	overflow: auto;
 }
 .gallery-button {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/gallery_photos/team2.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://storage.googleapis.com/avalanche-images/team2.jpg");
 	color: white;
 	height: auto;
 	font-family: 'Titillium Web', sans-serif;
