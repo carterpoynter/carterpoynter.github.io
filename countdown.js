@@ -19,9 +19,8 @@ function formatTime(date) {
 function updateCountdown() {
     const now = new Date().getTime();
     let currentEvent = events[currentIndex];
-    let nextEvent = null;
 
-    if (currentEvent.date <= now) {
+    if (!currentEvent || currentEvent.date <= now) {
         currentIndex++; // Move to the next event
         if (currentIndex < events.length) {
             currentEvent = events[currentIndex];
