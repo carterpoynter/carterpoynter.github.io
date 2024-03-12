@@ -131,7 +131,7 @@ $(function(){
 						const points = player.seasons[latestSeason].Goals + player.seasons[latestSeason].Assists;
 						playerCard.innerHTML = `
 						<div class="leaderboard_player">
-							<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/skater?id=${player.id}"><img src="./images/profiles/${player.id}_profile.png"></a></div>
+							<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/skater?id=${player.id}"><img src="${player.profileURL}"></a></div>
 							<div class="leaderboard_entries_info">
 								<h1><a href="https://bellinghamavs.com/players/skater?id=${player.id}">${player.firstName} ${player.lastName}</a></h1>
 								<p>#${player.number} - ${player.position}</p>
@@ -142,7 +142,7 @@ $(function(){
 					} else if (statistic === 'Penalties') {
 						playerCard.innerHTML = `
 						<div class="leaderboard_player">
-							<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/skater?id=${player.id}"><img src="./images/profiles/${player.id}_profile.png"></a></div>
+							<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/skater?id=${player.id}"><img src="${player.profileURL}"></a></div>
 							<div class="leaderboard_entries_info">
 								<h1><a href="https://bellinghamavs.com/players/skater?id=${player.id}">${player.firstName} ${player.lastName}</a></h1>
 								<p>#${player.number} - ${player.position}</p>
@@ -153,7 +153,7 @@ $(function(){
 					} else {
 						playerCard.innerHTML = `
 						<div class="leaderboard_player">
-							<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/skater?id=${player.id}"><img src="./images/profiles/${player.id}_profile.png"></a></div>
+							<div class="leaderboard_avatar"><a href="https://bellinghamavs.com/players/skater?id=${player.id}"><img src="${player.profileURL}"></a></div>
 							<div class="leaderboard_entries_info">
 								<h1><a href="https://bellinghamavs.com/players/skater?id=${player.id}">${player.firstName} ${player.lastName}</a></h1>
 								<p>#${player.number} - ${player.position}</p>
