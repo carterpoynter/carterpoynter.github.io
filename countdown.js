@@ -1,5 +1,5 @@
 const events = [
-    { name: "Championship Game", date: new Date("2024-03-06T20:45:00").getTime() },
+    { name: "vs. Trash Pandas", date: new Date("2024-09-25T20:45:00").getTime() },
     // Add more events as needed
 ];
 
