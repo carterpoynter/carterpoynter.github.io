@@ -205,7 +205,7 @@ const table = document.querySelector('.full-tables');
           seasonGoalsTotal += seasonData.GoalsAgainst;
           // careerAgainstAverage = (seasonData.GoalsAgainst / seasonData.GamesPlayed).toFixed(2);
           careerShutouts += seasonData.Shutouts;
-          gamesPlayed++;
+          gamesPlayed += seasonData.GamesPlayed;
         }
         careerAgainstAverage = (seasonGoalsTotal / gamesPlayed).toFixed(2);
 				row.insertCell().textContent = careerGamesPlayed;
