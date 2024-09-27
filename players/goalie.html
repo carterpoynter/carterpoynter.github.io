@@ -200,7 +200,7 @@ const table = document.querySelector('.full-tables');
 					careerGamesPlayed += seasonData.GamesPlayed;
 					careerWins += seasonData.Wins;
 					careerLosses += seasonData.Losses;
-					careerAgainstAverage = (seasonData.GoalsAgainst / seasonData.GamesPlayed).toFixed(2);
+					careerAgainstAverage += (seasonData.GoalsAgainst / seasonData.GamesPlayed).toFixed(2);
 					careerShutouts += seasonData.Shutouts;
 				}
 				row.insertCell().textContent = careerGamesPlayed;
