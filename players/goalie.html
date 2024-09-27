@@ -191,18 +191,23 @@ const table = document.querySelector('.full-tables');
 					row.insertCell().textContent = '-';
 				}
 				let careerGamesPlayed = 0;
-				let careerWins = 0;
-				let careerLosses = 0;
-				let careerAgainstAverage = 0;
-				let careerShutouts = 0;
-				for (const season in player.seasons) {
-					const seasonData = player.seasons[season];
-					careerGamesPlayed += seasonData.GamesPlayed;
-					careerWins += seasonData.Wins;
-					careerLosses += seasonData.Losses;
-					careerAgainstAverage += (seasonData.GoalsAgainst / seasonData.GamesPlayed).toFixed(2);
-					careerShutouts += seasonData.Shutouts;
-				}
+        let careerWins = 0;
+        let careerLosses = 0;
+        let careerAgainstAverage = 0;
+        let careerShutouts = 0;
+        let seasonGoalsTotal = 0;
+        let gamesPlayed = 0;
+        for (const season in player.seasons) {
+          const seasonData = player.seasons[season];
+          careerGamesPlayed += seasonData.GamesPlayed;
+          careerWins += seasonData.Wins;
+          careerLosses += seasonData.Losses;
+          seasonGoalsTotal += seasonData.GoalsAgainst;
+          // careerAgainstAverage = (seasonData.GoalsAgainst / seasonData.GamesPlayed).toFixed(2);
+          careerShutouts += seasonData.Shutouts;
+          gamesPlayed++;
+        }
+        careerAgainstAverage = (seasonGoalsTotal / gamesPlayed).toFixed(2);
 				row.insertCell().textContent = careerGamesPlayed;
 				row.insertCell().textContent = careerWins;
 				row.insertCell().textContent = careerLosses;
