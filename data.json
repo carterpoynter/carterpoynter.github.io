@@ -532,6 +532,78 @@
             }
         },
         {
+            "id": "fisher",
+            "firstName": "Fisher",
+            "lastName": "Boccongelle",
+            "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
+            "shoots": "Left",
+            "position": "LW",
+            "number": "18",
+            "seasons": {
+                "2024-25": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 4,
+                    "Goals": 0,
+                    "Assists": 1,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "brody",
+            "firstName": "Brody",
+            "lastName": "Beier",
+            "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
+            "shoots": "Left",
+            "position": "LW",
+            "number": "6",
+            "seasons": {
+                "2024-25": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 4,
+                    "Goals": 4,
+                    "Assists": 5,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "jeffbode",
+            "firstName": "Jeff",
+            "lastName": "Bode",
+            "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
+            "shoots": "Right",
+            "position": "D",
+            "number": "44",
+            "seasons": {
+                "2024-25": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 3,
+                    "Goals": 0,
+                    "Assists": 2,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "shanek",
+            "firstName": "Shane",
+            "lastName": "Keilty",
+            "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
+            "shoots": "Left",
+            "position": "LW",
+            "number": "13",
+            "seasons": {
+                "2024-25": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 3,
+                    "Goals": 1,
+                    "Assists": 2,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
             "id": "sean",
             "firstName": "Sean",
             "lastName": "Miller",
