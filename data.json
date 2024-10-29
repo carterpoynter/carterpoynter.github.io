@@ -448,7 +448,7 @@
             "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
             "shoots": "Left",
             "position": "LW",
-            "number": "13",
+            "number": 13,
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
@@ -502,7 +502,7 @@
             "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
             "shoots": "Right",
             "position": "RW",
-            "number": "8",
+            "number": 8,
             "seasons": {
                 "2023-24": {
                     "Team": "Avalanche",
@@ -520,7 +520,7 @@
             "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater-girl.webp",
             "shoots": "Left",
             "position": "LW",
-            "number": "62",
+            "number": 62,
             "seasons": {
                 "2024-25": {
                     "Team": "Avalanche",
@@ -538,7 +538,7 @@
             "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
             "shoots": "Left",
             "position": "LW",
-            "number": "18",
+            "number": 18,
             "seasons": {
                 "2024-25": {
                     "Team": "Avalanche",
@@ -556,7 +556,7 @@
             "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
             "shoots": "Left",
             "position": "LW",
-            "number": "6",
+            "number": 6,
             "seasons": {
                 "2024-25": {
                     "Team": "Avalanche",
@@ -574,7 +574,7 @@
             "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
             "shoots": "Right",
             "position": "D",
-            "number": "44",
+            "number": 44,
             "seasons": {
                 "2024-25": {
                     "Team": "Avalanche",
@@ -592,7 +592,7 @@
             "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
             "shoots": "Left",
             "position": "LW",
-            "number": "13",
+            "number": 13,
             "seasons": {
                 "2024-25": {
                     "Team": "Avalanche",
