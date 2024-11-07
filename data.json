@@ -347,7 +347,7 @@
             "lastName": "Sikich",
             "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/jake_profile.webp",
             "shoots": "Left",
-            "position": "D",
+            "position": "LW",
             "number": 77,
             "seasons": {
                 "2022-23": {
@@ -530,7 +530,7 @@
             "lastName": "Boccongelle",
             "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
             "shoots": "Left",
-            "position": "LW",
+            "position": "D",
             "number": 18,
             "seasons": {
                 "2024-25": {
@@ -592,6 +592,24 @@
                     "GamesPlayed": 5,
                     "Goals": 1,
                     "Assists": 2,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "willett",
+            "firstName": "Torrey",
+            "lastName": "Willett",
+            "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
+            "shoots": "Left",
+            "position": "D",
+            "number": 17,
+            "seasons": {
+                "2024-25": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 5,
+                    "Goals": 0,
+                    "Assists": 0,
                     "Penalties": 0
                 }
             }
