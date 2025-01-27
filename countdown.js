@@ -1,8 +1,9 @@
 const events = [
-    { name: "vs. Green Hornets", date: new Date("2024-12-18T20:45:00").getTime() },
-    { name: "vs. Trash Pandas", date: new Date("2025-01-08T22:15:00").getTime() },
-    { name: "vs. Kraken Beers", date: new Date("2025-01-15T22:15:00").getTime() },
-    { name: "vs. Kraken Beers", date: new Date("2025-01-22T20:45:00").getTime() }
+    { name: "vs. Rangers", date: new Date("2025-01-29T22:15:00").getTime() },
+    { name: "vs. Green Hornets", date: new Date("2025-02-05T20:45:00").getTime() },
+    { name: "vs. Trash Pandas", date: new Date("2025-02-12T20:45:00").getTime() },
+    { name: "vs. Rangers", date: new Date("2025-02-18T22:15:00").getTime() },
+    { name: "vs. Rangers", date: new Date("2025-02-26T20:45:00").getTime() }
     // Add more events as needed
 ];
 
