@@ -53,8 +53,8 @@
                 },
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 17,
-                    "Goals": 14,
+                    "GamesPlayed": 18,
+                    "Goals": 15,
                     "Assists": 17,
                     "Penalties": 0
                 }
@@ -99,10 +99,10 @@
                 },
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 17,
+                    "GamesPlayed": 18,
                     "Goals": 11,
-                    "Assists": 11,
-                    "Penalties": 18
+                    "Assists": 12,
+                    "Penalties": 21
                 }
             }
         },
@@ -156,7 +156,7 @@
                 },
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 16,
+                    "GamesPlayed": 17,
                     "Goals": 6,
                     "Assists": 5,
                     "Penalties": 0
@@ -206,7 +206,7 @@
                 },
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 15,
+                    "GamesPlayed": 16,
                     "Goals": 1,
                     "Assists": 5,
                     "Penalties": 3
@@ -238,7 +238,7 @@
                 },
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 17,
+                    "GamesPlayed": 18,
                     "Goals": 4,
                     "Assists": 6,
                     "Penalties": 3
@@ -295,7 +295,7 @@
                 },
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 12,
+                    "GamesPlayed": 13,
                     "Goals": 1,
                     "Assists": 5,
                     "Penalties": 9
@@ -327,9 +327,9 @@
                 },
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 11,
+                    "GamesPlayed": 12,
                     "Goals": 5,
-                    "Assists": 7,
+                    "Assists": 8,
                     "Penalties": 12
                 }
             }
@@ -359,9 +359,9 @@
                 },
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 15,
-                    "Goals": 4,
-                    "Assists": 15,
+                    "GamesPlayed": 16,
+                    "Goals": 5,
+                    "Assists": 16,
                     "Penalties": 21
                 }
             }
@@ -528,9 +528,9 @@
             "seasons": {
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 16,
+                    "GamesPlayed": 17,
                     "Goals": 1,
-                    "Assists": 9,
+                    "Assists": 10,
                     "Penalties": 3
                 }
             }
@@ -546,8 +546,8 @@
             "seasons": {
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 18,
-                    "Goals": 24,
+                    "GamesPlayed": 19,
+                    "Goals": 25,
                     "Assists": 21,
                     "Penalties": 0
                 }
@@ -564,7 +564,7 @@
             "seasons": {
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 17,
+                    "GamesPlayed": 18,
                     "Goals": 3,
                     "Assists": 7,
                     "Penalties": 0
@@ -582,7 +582,7 @@
             "seasons": {
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 15,
+                    "GamesPlayed": 16,
                     "Goals": 7,
                     "Assists": 6,
                     "Penalties": 0
@@ -600,7 +600,7 @@
             "seasons": {
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 12,
+                    "GamesPlayed": 13,
                     "Goals": 0,
                     "Assists": 1,
                     "Penalties": 0
@@ -645,11 +645,11 @@
                 },
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 13,
+                    "GamesPlayed": 14,
                     "Wins": 9,
-                    "Losses": 4,
+                    "Losses": 5,
                     "Shutouts": 1,
-                    "GoalsAgainst": 41
+                    "GoalsAgainst": 46
                 }
             }
         }
