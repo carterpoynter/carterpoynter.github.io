@@ -735,12 +735,13 @@
                     "Shutouts": 1,
                     "GoalsAgainst": 50
                 },
-                "2025-26": {
+                "2024-25": {
                     "Team": "Avalanche",
                     "GamesPlayed": 0,
-                    "Goals": 0,
-                    "Assists": 0,
-                    "Penalties": 0
+                    "Wins": 0,
+                    "Losses": 0,
+                    "Shutouts": 0,
+                    "GoalsAgainst": 0
                 }
             }
         }
