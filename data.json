@@ -60,7 +60,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
+                    "GamesPlayed": 2,
                     "Goals": 0,
                     "Assists": 0,
                     "Penalties": 0
@@ -113,9 +113,9 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
+                    "GamesPlayed": 2,
                     "Goals": 0,
-                    "Assists": 0,
+                    "Assists": 2,
                     "Penalties": 0
                 }
             }
@@ -180,7 +180,7 @@
                     "GamesPlayed": 0,
                     "Goals": 0,
                     "Assists": 0,
-                    "Penalties": 0
+                    "Penalties": 3
                 }
             }
         },
@@ -234,7 +234,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
+                    "GamesPlayed": 1,
                     "Goals": 0,
                     "Assists": 0,
                     "Penalties": 0
@@ -273,8 +273,8 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
-                    "Goals": 0,
+                    "GamesPlayed": 2,
+                    "Goals": 1,
                     "Assists": 0,
                     "Penalties": 0
                 }
@@ -337,7 +337,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
+                    "GamesPlayed": 1,
                     "Goals": 0,
                     "Assists": 0,
                     "Penalties": 0
@@ -408,7 +408,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
+                    "GamesPlayed": 2,
                     "Goals": 0,
                     "Assists": 0,
                     "Penalties": 0
@@ -566,9 +566,9 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
+                    "GamesPlayed": 2,
                     "Goals": 0,
-                    "Assists": 0,
+                    "Assists": 2,
                     "Penalties": 0
                 }
             }
@@ -591,7 +591,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
+                    "GamesPlayed": 1,
                     "Goals": 0,
                     "Assists": 0,
                     "Penalties": 0
@@ -616,8 +616,8 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
-                    "Goals": 0,
+                    "GamesPlayed": 2,
+                    "Goals": 7,
                     "Assists": 0,
                     "Penalties": 0
                 }
@@ -641,10 +641,10 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
+                    "GamesPlayed": 1,
                     "Goals": 0,
                     "Assists": 0,
-                    "Penalties": 0
+                    "Penalties": 3
                 }
             }
         },
@@ -684,7 +684,25 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
+                    "GamesPlayed": 1,
+                    "Goals": 0,
+                    "Assists": 2,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "spencerb",
+            "firstName": "Spencer",
+            "lastName": "Beier",
+            "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
+            "shoots": "Left",
+            "position": "D",
+            "number": 17,
+            "seasons": {
+                "2025-26": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 1,
                     "Goals": 0,
                     "Assists": 0,
                     "Penalties": 0
@@ -737,11 +755,11 @@
                 },
                 "2024-25": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 0,
-                    "Wins": 0,
-                    "Losses": 0,
+                    "GamesPlayed": 2,
+                    "Wins": 1,
+                    "Losses": 1,
                     "Shutouts": 0,
-                    "GoalsAgainst": 0
+                    "GoalsAgainst": 10
                 }
             }
         }
