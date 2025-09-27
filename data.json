@@ -696,9 +696,9 @@
             "firstName": "Spencer",
             "lastName": "Beier",
             "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
-            "shoots": "Left",
-            "position": "D",
-            "number": 17,
+            "shoots": "R",
+            "position": "RW",
+            "number": 23,
             "seasons": {
                 "2025-26": {
                     "Team": "Avalanche",
