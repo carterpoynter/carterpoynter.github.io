@@ -60,8 +60,8 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 5,
-                    "Goals": 4,
+                    "GamesPlayed": 6,
+                    "Goals": 5,
                     "Assists": 0,
                     "Penalties": 0
                 }
@@ -234,7 +234,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 4,
+                    "GamesPlayed": 5,
                     "Goals": 1,
                     "Assists": 2,
                     "Penalties": 0
@@ -273,7 +273,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 5,
+                    "GamesPlayed": 6,
                     "Goals": 1,
                     "Assists": 0,
                     "Penalties": 6
@@ -337,7 +337,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 3,
+                    "GamesPlayed": 4,
                     "Goals": 0,
                     "Assists": 3,
                     "Penalties": 3
@@ -408,7 +408,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 5,
+                    "GamesPlayed": 6,
                     "Goals": 1,
                     "Assists": 3,
                     "Penalties": 0
@@ -566,9 +566,9 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 5,
+                    "GamesPlayed": 6,
                     "Goals": 2,
-                    "Assists": 3,
+                    "Assists": 4,
                     "Penalties": 0
                 }
             }
@@ -591,7 +591,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 3,
+                    "GamesPlayed": 4,
                     "Goals": 1,
                     "Assists": 0,
                     "Penalties": 3
@@ -616,9 +616,9 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 5,
-                    "Goals": 13,
-                    "Assists": 3,
+                    "GamesPlayed": 6,
+                    "Goals": 14,
+                    "Assists": 4,
                     "Penalties": 0
                 }
             }
@@ -641,10 +641,10 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 3,
+                    "GamesPlayed": 4,
                     "Goals": 0,
                     "Assists": 0,
-                    "Penalties": 3
+                    "Penalties": 6
                 }
             }
         },
@@ -684,7 +684,7 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 4,
+                    "GamesPlayed": 5,
                     "Goals": 0,
                     "Assists": 3,
                     "Penalties": 0
@@ -702,9 +702,9 @@
             "seasons": {
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 4,
-                    "Goals": 4,
-                    "Assists": 1,
+                    "GamesPlayed": 5,
+                    "Goals": 5,
+                    "Assists": 2,
                     "Penalties": 0
                 }
             }
@@ -755,11 +755,11 @@
                 },
                 "2025-26": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 4,
+                    "GamesPlayed": 5,
                     "Wins": 2,
-                    "Losses": 2,
+                    "Losses": 3,
                     "Shutouts": 0,
-                    "GoalsAgainst": 24
+                    "GoalsAgainst": 28
                 }
             }
         }
