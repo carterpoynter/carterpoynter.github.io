@@ -762,22 +762,23 @@
                     "GoalsAgainst": 28
                 }
             },
-        {
-            "id": "gordie",
-            "firstName": "Gordie",
-            "lastName": "The Goalie",
-            "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
-            "shoots": "Left",
-            "position": "G",
-            "number": 1,
-            "seasons": {
-                "2025-26": {
-                    "Team": "Avalanche",
-                    "GamesPlayed": 3,
-                    "Wins": 3,
-                    "Losses": 0,
-                    "Shutouts": 0,
-                    "GoalsAgainst": 7
+            {
+                "id": "gordie",
+                "firstName": "Gordie",
+                "lastName": "The Goalie",
+                "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
+                "shoots": "Left",
+                "position": "G",
+                "number": 1,
+                "seasons": {
+                    "2025-26": {
+                        "Team": "Avalanche",
+                        "GamesPlayed": 3,
+                        "Wins": 3,
+                        "Losses": 0,
+                        "Shutouts": 0,
+                        "GoalsAgainst": 7
+                    }
                 }
             }
         }
