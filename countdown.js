@@ -1,8 +1,5 @@
 const events = [
-    { name: "vs Trash Pandas", date: new Date("2025-10-29T22:45:00").getTime() },
-    { name: "vs Lickalottapucks", date: new Date("2025-11-05T22:45:00").getTime() },
-    { name: "vs Kraken Beers", date: new Date("2025-11-11T22:15:00").getTime() },
-    { name: "vs Spartans", date: new Date("2025-11-19T22:45:00").getTime() },
+    { name: "vs Spartans", date: new Date("2025-11-19T21:30:00").getTime() },
     { name: "vs Mullet Ponies", date: new Date("2025-11-25T22:15:00").getTime() }
     // Add more events as needed
 ];
