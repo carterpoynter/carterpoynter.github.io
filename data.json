@@ -64,6 +64,13 @@
                     "Goals": 14,
                     "Assists": 7,
                     "Penalties": 0
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 1,
+                    "Goals": 2,
+                    "Assists": 0,
+                    "Penalties": 0
                 }
             }
         },
@@ -117,6 +124,13 @@
                     "Goals": 4,
                     "Assists": 10,
                     "Penalties": 15
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 1,
+                    "Goals": 0,
+                    "Assists": 0,
+                    "Penalties": 0
                 }
             }
         },
@@ -180,6 +194,13 @@
                     "GamesPlayed": 18,
                     "Goals": 4,
                     "Assists": 4,
+                    "Penalties": 3
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 2,
+                    "Goals": 0,
+                    "Assists": 1,
                     "Penalties": 3
                 }
             }
@@ -277,6 +298,13 @@
                     "Goals": 3,
                     "Assists": 5,
                     "Penalties": 6
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 2,
+                    "Goals": 0,
+                    "Assists": 0,
+                    "Penalties": 0
                 }
             }
         },
@@ -412,6 +440,13 @@
                     "Goals": 6,
                     "Assists": 10,
                     "Penalties": 6
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 2,
+                    "Goals": 1,
+                    "Assists": 0,
+                    "Penalties": 0
                 }
             }
         },
@@ -570,6 +605,13 @@
                     "Goals": 7,
                     "Assists": 13,
                     "Penalties": 0
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 2,
+                    "Goals": 0,
+                    "Assists": 0,
+                    "Penalties": 0
                 }
             }
         },
@@ -620,6 +662,13 @@
                     "Goals": 40,
                     "Assists": 15,
                     "Penalties": 12
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 2,
+                    "Goals": 0,
+                    "Assists": 0,
+                    "Penalties": 0
                 }
             }
         },
@@ -645,6 +694,13 @@
                     "Goals": 1,
                     "Assists": 9,
                     "Penalties": 6
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 2,
+                    "Goals": 0,
+                    "Assists": 0,
+                    "Penalties": 0
                 }
             }
         },
@@ -688,6 +744,13 @@
                     "Goals": 0,
                     "Assists": 5,
                     "Penalties": 6
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 1,
+                    "Goals": 0,
+                    "Assists": 0,
+                    "Penalties": 0
                 }
             }
         },
@@ -706,6 +769,49 @@
                     "Goals": 10,
                     "Assists": 8,
                     "Penalties": 9
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 2,
+                    "Goals": 0,
+                    "Assists": 1,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "bent",
+            "firstName": "Ben",
+            "lastName": "Totten",
+            "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
+            "shoots": "L",
+            "position": "LW",
+            "number": 0,
+            "seasons": {
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 2,
+                    "Goals": 1,
+                    "Assists": 2,
+                    "Penalties": 0
+                }
+            }
+        },
+        {
+            "id": "mathuet",
+            "firstName": "Mathue",
+            "lastName": "Totten",
+            "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
+            "shoots": "L",
+            "position": "D",
+            "number": 0,
+            "seasons": {
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 2,
+                    "Goals": 0,
+                    "Assists": 0,
+                    "Penalties": 0
                 }
             }
         },
@@ -779,6 +885,14 @@
                     "Losses": 3,
                     "Shutouts": 0,
                     "GoalsAgainst": 52
+                },
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 2,
+                    "Wins": 0,
+                    "Losses": 2,
+                    "Shutouts": 0
+                    "GoalsAgainst": 14
                 }
             }
         }
