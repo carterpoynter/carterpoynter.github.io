@@ -497,7 +497,7 @@ table {
 	color: white;
 	height: auto;
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 72px;
+	font-size: 56px;
 	font-weight: 700;
 	font-style: italic;
 	text-align: center;
@@ -505,8 +505,8 @@ table {
 	letter-spacing: -1px;
 }
 .roster-button h1 {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 80px;
+	margin-bottom: 80px;
 	line-height: 1;
 }
 
@@ -526,7 +526,7 @@ table {
 }
 .countdown-text {
 	line-height: 1.2;
-	font-size: 48px;
+	font-size: 36px;
 }
 /*COUNTDOWN (TEMPORARY?) ^^^^^^^^*/
 
@@ -543,7 +543,7 @@ table {
 	color: white;
 	height: auto;
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 72px;
+	font-size: 56px;
 	text-align: center;
 	padding: 30px;
 	background-size: auto 140%;
@@ -553,8 +553,8 @@ table {
 	letter-spacing: -2px;
 }
 .gallery-button h1 {
-	margin-top: 120px;
-	margin-bottom: 120px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 .right-home {
 	width: 390px;
@@ -605,7 +605,7 @@ table {
 }
 .right-subcontainer {
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 25px;
+	font-size: 18px;
 	padding: 16px;
 	border-radius: 5px;
 	background-color: white;
@@ -646,7 +646,7 @@ table {
 		margin-left: auto;
 	}
 	.gallery-button {
-		font-size: 50px;
+		font-size: 28px;
 		background-size: 100% auto;
 		padding: 20px;
 	}
@@ -655,7 +655,7 @@ table {
 		margin-bottom: 20px;
 	}
 	.roster-button {
-		font-size: 50px;
+		font-size: 28px;
 		padding: 20px;
 	}
 	.roster-button h1 {
