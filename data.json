@@ -67,9 +67,9 @@
                 },
                 "2026-27": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 7,
+                    "GamesPlayed": 8,
                     "Goals": 7,
-                    "Assists": 2,
+                    "Assists": 3,
                     "Penalties": 0
                 }
             }
@@ -198,7 +198,7 @@
                 },
                 "2026-27": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 8,
+                    "GamesPlayed": 9,
                     "Goals": 1,
                     "Assists": 3,
                     "Penalties": 9
@@ -301,9 +301,9 @@
                 },
                 "2026-27": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 8,
+                    "GamesPlayed": 9,
                     "Goals": 2,
-                    "Assists": 3,
+                    "Assists": 4,
                     "Penalties": 3
                 }
             }
@@ -443,9 +443,9 @@
                 },
                 "2026-27": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
+                    "GamesPlayed": 7,
                     "Goals": 1,
-                    "Assists": 1,
+                    "Assists": 2,
                     "Penalties": 0
                 }
             }
@@ -665,10 +665,28 @@
                 },
                 "2026-27": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 8,
-                    "Goals": 7,
+                    "GamesPlayed": 9,
+                    "Goals": 8,
                     "Assists": 6,
                     "Penalties": 3
+                }
+            }
+        },
+        {
+            "id": "greyson",
+            "firstName": "Greyson",
+            "lastName": "Beier",
+            "profileURL": "https://storage.googleapis.com/avalanche-images/profiles/skater.webp",
+            "shoots": "Left",
+            "position": "LW",
+            "number": 43,
+            "seasons": {
+                "2026-27": {
+                    "Team": "Avalanche",
+                    "GamesPlayed": 1,
+                    "Goals": 0,
+                    "Assists": 1,
+                    "Penalties": 0
                 }
             }
         },
@@ -697,7 +715,7 @@
                 },
                 "2026-27": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
+                    "GamesPlayed": 7,
                     "Goals": 0,
                     "Assists": 1,
                     "Penalties": 0
@@ -772,9 +790,9 @@
                 },
                 "2026-27": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
+                    "GamesPlayed": 7,
                     "Goals": 0,
-                    "Assists": 4,
+                    "Assists": 5,
                     "Penalties": 9
                 }
             }
@@ -790,8 +808,8 @@
             "seasons": {
                 "2026-27": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 7,
-                    "Goals": 3,
+                    "GamesPlayed": 8,
+                    "Goals": 4,
                     "Assists": 3,
                     "Penalties": 0
                 }
@@ -826,8 +844,8 @@
             "seasons": {
                 "2026-27": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 6,
-                    "Goals": 5,
+                    "GamesPlayed": 7,
+                    "Goals": 7,
                     "Assists": 2,
                     "Penalties": 0
                 }
@@ -906,11 +924,11 @@
                 },
                 "2026-27": {
                     "Team": "Avalanche",
-                    "GamesPlayed": 7,
-                    "Wins": 2,
+                    "GamesPlayed": 8,
+                    "Wins": 3,
                     "Losses": 5,
                     "Shutouts": 1,
-                    "GoalsAgainst": 35
+                    "GoalsAgainst": 37
                 }
             }
         }
